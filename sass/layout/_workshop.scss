@@ -1,0 +1,80 @@
+.workshop{
+    
+    // width: 85%;
+    width: 0%;
+    opacity: 0  ;
+
+    height: 100%;
+    color: rgb(176, 53, 73);
+
+    @include centerAlign;
+    height:65%;
+    top: 55%;
+
+    &__container{
+        height: 100%;
+
+    }
+    
+    &__cards{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        background-color: rgba(98, 97, 97, 0.319);
+        border-radius: 0.4rem;
+    }
+
+    &__card{
+
+        width: 0%;
+
+        height: 85%;
+        background-color: rgb(202, 204, 83);
+        border-radius: 0.4rem;
+        margin:auto 1.5rem;
+        flex: 1;
+        text-align: center;
+        padding: 1.5rem;
+
+        &:hover {
+            .workshop__card{
+                &__title{
+                    transform: translateY(2rem) rotate(0deg);
+                }
+                &__details{
+                    opacity: 1;
+                }
+            }
+        }
+
+        &__title{
+            
+            font-size: 4rem;
+            text-transform: uppercase;
+            transform-origin: center;
+            transform: translateY(16rem) rotate(-90deg);
+            transition: all 1s;
+        }
+
+        &__details {
+            text-transform: capitalize;
+            font-size: 2rem;
+            padding: 10rem 1rem;
+            opacity: 0;
+            transition: all 1s;
+        }
+
+        &__bgImg {
+            position: absolute;
+            img{
+                height: 15rem;
+                display: none;
+            }
+        }
+    }
+
+}
+
+#workshop__card--1 {
+    // flex: 1;
+}

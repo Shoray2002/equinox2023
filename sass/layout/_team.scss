@@ -1,0 +1,39 @@
+.team {
+    position: absolute;
+    font-size: 2rem;
+    color: red;
+    background-color: rgba(174, 168, 168, 0.517);
+    @include centerAlign;
+    top: 55%;
+    
+    // height: 600px;
+    opacity:0;
+    height: 0px;
+    
+    width: 80%;
+    overflow-y: scroll;
+    border-radius: 0.7rem;
+
+    &__members{
+        display: grid;
+        grid-template-rows: 8rem 23rem 8rem 20rem 20rem 20rem;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 2rem;
+        margin:  0.5rem 2rem 5rem;
+    }
+
+    .heading__tertiary {
+        font:3rem uppercase;
+        padding-top: 2rem;
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    &__member {
+        padding: 2rem;
+        font-size: 3rem;
+        border-radius: 0.4rem;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+    }
+}

@@ -1,0 +1,17 @@
+.r2d2{
+
+    &__bot{
+
+        @include centerAlign;
+
+        border-radius: 0.3rem;
+        text-align: center;
+
+        z-index: 4;
+        font-size: 2rem;
+        width: 6rem;
+        background-color: rgb(144, 0, 255);
+
+        transition: all 1s;
+    }
+}

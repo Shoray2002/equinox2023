@@ -1,0 +1,101 @@
+.home{
+    
+    //temporary
+
+    color: blue;
+    
+    //end
+
+
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+
+
+
+    &__row{
+        width: 15%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .row {
+
+        &--1{
+            // background-color: rgb(44, 139, 221);
+        }
+        &--2{
+            // background-color: rgb(189, 221, 44);
+        }
+        &--3{
+            // background-color: rgb(215, 44, 221);
+        }
+        
+    }
+
+    .nav{
+
+        &__category{
+        
+            height: 20%;
+            background-color: rgb(86, 220, 9);
+            margin: 2rem;
+            border-radius: 0.3rem;
+
+            //temporary
+
+            position: relative;
+            span{
+                position: absolute;
+                font-size: 2rem;
+                text-align: center;
+                @include centerAlign;
+            }
+        }
+    }
+
+
+    &__container {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        // align-content: space-around;
+        justify-content: space-around;
+
+        &__img {
+        
+            height: 30%;
+            width: 80%;
+            margin: 0 auto;
+            ;
+            border-radius: 0.3rem;
+
+            //temporary
+
+            position: relative;
+            span{
+                position: absolute;
+                font-size: 2rem;
+                text-align: center;
+                @include centerAlign;
+            }
+
+            &:last-child{
+                background-color: rgb(69, 214, 74);
+            }
+
+            
+            &:not(:last-child) {
+                background-color: rgb(69, 214, 180);
+            }
+        }
+
+
+    }
+}
+
+
