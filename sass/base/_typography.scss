@@ -12,7 +12,7 @@
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: rgb(240, 227, 227); 
     
     border-radius:10px;
   }
@@ -22,3 +22,66 @@
     background: #555; 
   }
 
+
+  
+  
+  /* Set the font, lean the board, position it */
+  #board {
+
+    display: none;
+
+
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    transform: perspective(300px) rotateX(25deg);  
+    transform-origin: 50% 100%;
+    text-align: justify;
+    position: absolute;
+    margin-left: -9em;
+    font-weight: bold;
+    overflow: hidden;
+    font-size: 600%;
+    height: 50em;
+    width: 18em;
+    bottom: 0;
+    left: 50%;
+    transition: hover 1s;
+
+    p {
+      color: #FFFF82;
+    }
+
+  }
+  
+  #board:after {    
+    position: absolute;
+    content: ' ';
+    bottom: 60%;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Set the scrolling animation and position it */
+  #content {
+    animation: scroll 50s linear;
+    position: absolute;
+    top: 100%;
+  }
+  
+  #title, #subtitle {
+    text-align: center;
+  }
+  
+  @keyframes scroll {
+      0% {
+          top: 100%;
+      }
+      100% {
+          top: -170%;
+      }
+  }
+
+
+  #lines__sphere {
+    @include centerAlign;
+  }

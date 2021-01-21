@@ -22,51 +22,48 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
 </head>
 <body class="body">
-    <!-- <div class="aaaamaain">
-        <div class="img-div">
-            <img src="./img/equinox_logo_white.png" alt="">
-        </div>
 
-        <div class="heading-1">
 
-            <h3 class="glitch" data-text="2021: A Virtual Odyssey">2021: A Virtual Odyssey</h3>
-                
-            <h4 style="font-size: 2.5rem; margin-top: 5rem;" class="glitch" data-text="coming soon....." >coming soon.....</h4>
-
-        </div>
-    </div> -->
-    <!-- <div style="position: absolute; top: 50%;
-    left:50%; z-index: 4; font-size: 4rem; color: antiquewhite;" class="test">
-        1
-    </div> -->
-
-    <div id="bot" class="r2d2__bot">
-        R2_D2
-        BOT
+    <div style="z-index: 100;" id="bot" class="r2d2__bot">
+        <img src="./img/rd2.png" alt="">
     </div>
+
+    
+    <div id="lines__sphere"></div>
+
+    <!-- <header>
+        <div class="header">
+        </div>
+    </header> -->
 
     <main>
 
         <section id="home__container" class="home">
             <div class="home__row row--1">
                 <div id="event_1" class="nav__category">
-                    <span>workshops</span>
+                    <span>WORKSHOPS</span>
                 </div>
                 <div id="event_2" class="nav__category">
                     <span>SPONSORS</span>
                 </div>
             </div>
     
-    
             <div class=" home__row home__container row--2">
                 <div id="event_3" class="home__container__img logo__img">
-                    <span>EQUINOX<br> (HOME)</span>
+                    <img src="./img/equinox_logo_white.png" alt="">
+                    <span>2021 : A Virtual Odyssey</span>
                 </div>
+
+                
                 
                 <div id="event_4" class="home__container__img">
-                    <span>DEATHSTAR_IMG (ABOUT)</span>
+                    <span>ABOUT</span>
                 </div>
 
             </div>
@@ -83,7 +80,7 @@
             
         </section>
 
-        
+        <!-- WORKSHOP SECTION -->
         <section class="workshop">
 
             <div class="workshop__container">
@@ -145,6 +142,7 @@
             </div> 
         </section>
 
+        <!-- TEAM SECTION -->
 
         <section class="team">
             <div class="team__container">
@@ -169,12 +167,47 @@
                     <div class="team__member">14</div>
                     <div class="team__member">15</div>
                     <div class="team__member">16</div>
+
+                    
+                    <div class="team__member">17</div>
                 </div>
             </div>
         </section>
 
+        <section class="about">
+            <div id="board">  
+                <div id="content">
+                    <p id="title">ABOUT</p>
+                    <p id="subtitle"></p>
+                    <br>
+                    <!-- And make it cheesy ! -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, non debitis sequi necessitatibus magnam saepe obcaecati minima fugit repellendus neque architecto expedita magni id sit veritatis deleniti voluptates quod aliquamgnam saepe obcaecati minima fugit repellendus neque architecto expedita magni id sit veritatis deleniti voluptates quod aliquam!</p>        
+                    </div>  
+                </div>
+        </section>
+
     </main>
 
+
+
+    <footer class="section-footer">
+        <div class="footer__container">
+            <ul class="footer__items">
+                    <a href="#">
+                        <i class="fa fa-facebook"></i>
+                    </a>    
+                    <a href="">
+                        <i class="fa fa-instagram"></i>
+                    </a>     
+                    <a href="">
+                        <i class="fa fa-twitter"></i>
+                    </a>     
+                    <a href="">
+                        <i class="fa fa-linkedin"></i>
+                    </a>    
+            </ul>
+        </div>
+    </footer>
 
 
 
@@ -204,6 +237,7 @@
     <script src="js/three.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/events.js"></script>
+    <!-- <script src="./js/lines_sphere.js"></script> deleted moved to events.js func reasons -->
     
 </body>
 </html>

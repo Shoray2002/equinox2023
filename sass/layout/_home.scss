@@ -1,9 +1,13 @@
 .home{
     
     //temporary
-
-    color: blue;
+    // opacity: 0.3;
+    color: rgb(255, 255, 255);
+    font-family: 'Audiowide', cursive;
+    z-index: 10;
     
+    // border: 1rem solid rgba(71, 71, 71, 0.694);
+
     //end
 
 
@@ -42,7 +46,7 @@
         &__category{
         
             height: 20%;
-            background-color: rgb(86, 220, 9);
+            // background-color: rgb(86, 220, 9);   
             margin: 2rem;
             border-radius: 0.3rem;
 
@@ -51,7 +55,7 @@
             position: relative;
             span{
                 position: absolute;
-                font-size: 2rem;
+                font-size: 2.2rem;
                 text-align: center;
                 @include centerAlign;
             }
@@ -71,13 +75,19 @@
             height: 30%;
             width: 80%;
             margin: 0 auto;
-            ;
             border-radius: 0.3rem;
+            & img{
+                height: 10rem;
+                
+                @include centerAlign;
+                top: 10%;
+            }
 
             //temporary
 
             position: relative;
             span{
+                width: 100%;
                 position: absolute;
                 font-size: 2rem;
                 text-align: center;
@@ -85,12 +95,12 @@
             }
 
             &:last-child{
-                background-color: rgb(69, 214, 74);
+                // background-color: rgb(69, 214, 74);
             }
 
             
             &:not(:last-child) {
-                background-color: rgb(69, 214, 180);
+                // background-color: rgb(69, 214, 180);
             }
         }
 
