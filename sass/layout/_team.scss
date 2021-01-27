@@ -1,6 +1,6 @@
 .team {
     z-index: 10;
-
+    font-family: 'Audiowide', cursive;
     font-size: 2rem;
     color:  rgb(176, 53, 73);
     background-color: rgb(127, 124, 124);
@@ -31,6 +31,7 @@
     }
 
     .heading__tertiary {
+        font-family: 'Audiowide', cursive !important;
         font:3rem uppercase;
         padding-top: 1rem;
         grid-column: 1 / -1;

@@ -12,7 +12,7 @@
         padding: 1rem 0 1rem 0;
         
 
-        background-color: rgba(255, 255, 255, 0.143);
+        background-color: #ffffff24;
         clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
 
         & ul  {
@@ -23,7 +23,13 @@
 
             a{
                 text-decoration: none;
-                color: rgb(170, 170, 170);
+                color: #c1baba;
+                outline: none;
+
+                &:hover {
+                    color: #878787;
+                }
+                
             }
 
             

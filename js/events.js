@@ -376,7 +376,11 @@ event_6.addEventListener('click',(e) => {
         ease:"power4.out"
     })
 
-
+    gsap.to(".footer__container",{
+        duration:0.3,
+        backgroundColor:"#ffffff54",
+        color:"#292626"
+    })
 
 
     gsap.to('.team',{
@@ -543,6 +547,12 @@ event_3.addEventListener('click',(e) => {
         duration:1,
         opacity:0,
         scaleY:0
+    })
+
+    gsap.to(".footer__container",{
+        duration:0.3,
+        backgroundColor:"#ffffff24",
+        color:"#c1baba"
     })
 
 })

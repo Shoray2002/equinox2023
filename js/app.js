@@ -15,7 +15,7 @@ const init = () => {
 
     starGeo = new THREE.Geometry()
 
-    for(let i= 0;i<5000;i++){
+    for(let i= 0;i<1000;i++){
         star = new THREE.Vector3(
             Math.random() * 600 - 300,
             Math.random() * 600 - 300,
@@ -23,7 +23,7 @@ const init = () => {
         );
 
         star.velocity = 0;
-        star.acceleration = 0.02;
+        star.acceleration = 0.01;
         // star.acceleration = acc;
         starGeo.vertices.push(star);
     }

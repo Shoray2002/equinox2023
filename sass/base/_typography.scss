@@ -85,3 +85,64 @@
   #lines__sphere {
     @include centerAlign;
   }
+
+
+  //countdown
+  #countdown {
+    height: 100vh;
+    // z-index: 100;
+    @include centerAlign;
+   }
+  
+  .artwork {
+    height: 40%;
+    @include centerAlign;      
+  }
+
+  .countdown {
+      
+    font-family: 'Audiowide', cursive ;
+    @include centerAlign;
+    top: 85%;
+    width: 80%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    align-items: center;
+    // left: 30%;
+
+    &__coming{
+      background-color: rgba(128, 126, 126, 0.53);
+      color: white;
+      padding: 0.5rem 2rem;  
+      font-size: 2rem;
+      height: 5rem;
+    }
+
+    &__container{
+      background-color: rgba(128, 126, 126, 0.53);
+      color: white;
+      padding: 0.3rem 2rem;
+      height: 5rem;
+    }
+
+    &__timer{
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    &__time {
+      font-size: 2rem !important;
+      span{
+        font-size: 4rem;
+        margin: 0.5rem;
+      }
+    }
+  }
+
+
+  #background__svg{
+    opacity: 1;
+}
