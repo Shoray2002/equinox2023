@@ -100,11 +100,11 @@
   }
 
   .countdown {
-      
+    // background-color: rgb(255, 87, 87);
     font-family: 'Audiowide', cursive ;
     @include centerAlign;
     top: 85%;
-    width: 80%;
+    // width: 0%;
     text-align: center;
 
     display: flex;
@@ -114,6 +114,7 @@
     // left: 30%;
 
     &__coming{
+      // background-color: rgba(255, 0, 0, 0.53);
       background-color: rgba(128, 126, 126, 0.53);
       color: white;
       padding: 0.5rem 2rem;  
@@ -143,6 +144,121 @@
   }
 
 
-  #background__svg{
-    opacity: 1;
+  .heading{
+    
+
+    &__primary{
+      font-family: 'Audiowide';
+      font-size: 10rem;
+      color: rgb(243, 243, 243);
+
+    }
+
+    &__tertiary{
+      font-family: 'Audiowide';
+      font-size: 1.8rem;
+      transition: all 0.4s;
+      
+      text-shadow: .5rem 2rem 2rem rgba(black, .2);
+      
+      // &:hover{
+      //   // transform: skewY(2deg) skewX(15deg) scale(1.1);
+      //   text-shadow: .5rem 1rem 2rem rgba(black, .2);
+      // }
+      
+    }
+
+  }
+
+
+
+.background{
+  
+    &__lines{
+        @include marginCenter;
+
+        // width: 10%;
+      position: fixed;
+
+      display: flex;
+
+
+    }
+
+    &__line{    
+      width: 10vw;
+      // margin-right: 10vw;
+      height: 100vh;
+      border-right: 0.7px solid rgb(224, 224, 224);
+      // event
+      height: 0vh;
+      width: 0vw;
+    }
+
+    &__back{
+        position: absolute;
+        left: 10vw;
+        top: 10vh;
+        z-index: 1;
+        // event
+        opacity:0;
+        h1{
+            font-family: 'Audiowide';
+        }
+        transform: translateX(-100%);
+    }
+
+    
+    &__box{
+        // position: fixed;
+        height: 3rem;
+        width: 3rem;
+
+        &--tl{
+            position: fixed;
+            top: 4vh;
+            left: 2vw;
+
+            border-top: 1px solid grey;
+            
+            border-left: 1px solid grey;
+        }
+
+        &--tr{
+            position: fixed;
+            transform: translate(-100%);
+            top: 4vh;
+            left: 98vw;
+                
+            border-top: 1px solid grey;
+            
+            border-right: 1px solid grey;
+        }
+
+        &--bl{
+            position: fixed;
+            top: 96vh;
+            left: 2vw;
+            transform: translateY(-100%);
+                
+            // background-color: pink;
+            
+            border-bottom: 1px solid grey;
+            
+            border-left: 1px solid grey;
+        }
+
+        &--br{
+            position: fixed;
+            top: 96vh;
+            left: 98vw;
+            transform: translate(-100%,-100%);
+
+            border-bottom: 1px solid grey;
+
+            border-right: 1px solid grey;
+        }
+    }
+
+    
 }

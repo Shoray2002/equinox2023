@@ -1,3 +1,291 @@
-// -----------------------------------------------------------------------------
-// This file contains styles that are specific to the home page.
-// -----------------------------------------------------------------------------
+.home{
+    
+    //temporary
+    // opacity: 0.3;
+    color: rgb(255, 255, 255);
+    font-family: 'Audiowide', cursive ;
+    text-transform: capitalize;
+    // z-index: 10;
+    
+    // border: 1rem solid rgba(71, 71, 71, 0.694);
+
+    //end
+
+
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+
+
+
+    &__row{
+        width: 15%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .row {
+
+        &--1{
+            // background-color: rgb(44, 139, 221);
+        }
+        &--2{
+            // background-color: rgb(189, 221, 44);
+        }
+        &--3{
+            // background-color: rgb(215, 44, 221);
+        }
+        
+    }
+
+    .nav{
+
+        &__category{
+        
+            height: 20%;
+            // background-color: rgb(86, 220, 9);   
+            margin: 2rem;
+            border-radius: 0.3rem;
+            position: relative;
+
+            //temporary
+            padding: 2rem;
+            
+
+            span,a{
+                position: absolute;
+                line-height: 3rem;
+                font-size: 2.2rem;
+                text-align: center;
+                @include centerAlign;
+
+
+                overflow: hidden;
+                text-decoration: none;
+                color: #ffffff;
+                &::after {
+                    content: "";
+                    background: rgba(#c9c9c9, 0.25);
+                    position: absolute;
+                    left: 12px;
+                    bottom: -6px;
+                    // width: calc(100% - 2px);
+                    // height: calc(100% - 2px);
+                    width: 100%;
+                    height: 50%;
+                    z-index: -1;
+                    transition: 0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
+                }
+                &:hover:after {
+                    left: 0;
+                    bottom: -2px;
+                    width: 120%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+
+    &__container {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        // align-content: space-around;
+        justify-content: space-around;
+
+        &__img {
+        
+            height: 30%;
+            width: 80%;
+            margin: 0 auto;
+            border-radius: 0.3rem;
+            & img{
+                height: 10rem;
+                
+                @include centerAlign;
+                top: 10%;
+            }
+
+            //temporary
+
+            position: relative;
+            span{
+                width: 100%;
+                position: absolute;
+                font-size: 2rem;
+                text-align: center;
+                @include centerAlign;
+            }
+
+            &:last-child{
+                // background-color: rgb(69, 214, 74);
+            }
+
+            
+            &:not(:last-child) {
+                // background-color: rgb(69, 214, 180);
+            }
+        }
+
+
+    }
+}
+
+
+
+
+
+.about {
+
+    &--section{
+        // opacity: 0;
+        // display: none;
+        position: absolute;
+
+        background-color: rgb(255, 255, 255);
+        height: 100vh;
+        width: 100vw;
+        
+        // event
+        height: 10vh;
+        width: 10vw;
+        transform: scale(0);
+
+
+
+        // background: rgb(14,14,14);
+        // background: linear-gradient(45deg, rgb(0, 0, 0) 5%, rgba(255,255,255,1) 5%, rgba(230,230,230,1) 5.4%, rgba(0,0,0,1) 5.4%, rgba(0,0,0,1) 15%, rgba(241,241,241,1) 15%, rgba(255,255,255,1) 85%, rgb(0, 0, 0) 85%, rgb(0, 0, 0) 93.4%, rgba(251,251,251,1) 93.4%, rgba(255,255,255,1) 94%, rgb(0, 0, 0) 94%);
+        // transform: translate(-50%,-50%) scale(0);
+    }
+
+    &__heading--bg{
+        @include centerAlign;
+
+        // event
+        // height: 0rem;
+        opacity: 0;
+        
+    }
+    
+
+    &__heading{
+        @include centerAlign;
+        top: 93%;
+        z-index: 1;
+        opacity:0;
+    }
+        
+    &__container{
+        width: 96vw;
+        height: 92vh;
+        
+        // background-color: rgba(255, 255, 0, 0.408);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // height: 5vh;
+        // width: 5vw;
+        
+        position: relative;
+        margin-top: 4vh;
+        margin-left: 2vw;
+
+
+    }
+    &__content{
+        // background-color: rgba(0, 251, 255, 0.408);
+        width: 80vw;
+
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        flex-wrap: wrap;
+
+        position: relative;
+
+    }
+
+    &__details{
+        
+        overflow: scroll;
+        font-family: 'Pridi';
+        width: 40vw;
+        // height: 40vh;
+        // event
+        transform: scale(0);
+        // background-color: rgb(243, 160, 160);
+        // opacity: 1;
+
+        span{
+            font-weight: 400;
+            font-size: 1.7rem;
+            line-height: 2.2rem;
+        }
+
+        p{
+            font-size: 1.6rem;
+            font-weight: 200;
+            line-height: 3rem;
+            margin-top: 1rem;
+            // background-color: rgb(149, 255, 0);
+            line-height: 3rem;
+        }
+    }
+
+    &__images{
+        background-color: yellowgreen;
+
+        // position: absolute; 
+        display: flex;  
+        // padding: 1rem;
+        transform: scale(0);
+
+    }
+
+    &__image{
+        transition: all 0.5s;
+        position: absolute;
+        // background-color: yellowgreen;
+        
+
+        background-size: cover;
+        
+
+
+        &--1{  
+            top: -5rem;
+            // left: 5rem;
+            
+        }
+
+        &--2{
+            z-index: 5;
+            top: 14rem;
+            left: 5rem;
+        }
+        
+        &--3{
+            top: 3.5rem;
+            left: 20rem;
+        }
+
+        img{
+            height: 23rem ;
+            border-radius: 3px;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            // width: 27rem ;
+        }
+
+        &:hover{
+            z-index: 10;
+            transform: scale(1.2);
+        }
+
+    }
+}

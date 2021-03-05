@@ -81,17 +81,17 @@ init()
 // const bot = document.querySelector('#bot');
 
 
-var bot = document.querySelector("#bot");
-var container = document.querySelector("html");
+// var bot = document.querySelector("#bot");
+// var container = document.querySelector("html");
 
-container.addEventListener("click", function(event) {
-	var xPosition = event.clientX - container.getBoundingClientRect().left - (bot.clientWidth / 2);
-	var yPosition = event.clientY - container.getBoundingClientRect().top - (bot.clientHeight / 2);
-	// in case of a wide border, the boarder-width needs to be considered in the formula above
-	bot.style.left = xPosition + "px";
-	bot.style.top = yPosition + "px";
-	}
-);
+// container.addEventListener("click", function(event) {
+// 	var xPosition = event.clientX - container.getBoundingClientRect().left - (bot.clientWidth / 2);
+// 	var yPosition = event.clientY - container.getBoundingClientRect().top - (bot.clientHeight / 2);
+// 	// in case of a wide border, the boarder-width needs to be considered in the formula above
+// 	bot.style.left = xPosition + "px";
+// 	bot.style.top = yPosition + "px";
+// 	}
+// );
 
 
 

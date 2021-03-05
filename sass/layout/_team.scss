@@ -1,48 +1,48 @@
-.team {
-    z-index: 10;
-    font-family: 'Audiowide', cursive;
-    font-size: 2rem;
-    color:  rgb(176, 53, 73);
-    background-color: rgb(127, 124, 124);
-    // @include centerAlign;
+// .team {
+//     z-index: 10;
+//     font-family: 'Audiowide', cursive;
+//     font-size: 2rem;
+//     color:  rgb(176, 53, 73);
+//     background-color: rgb(127, 124, 124);
+//     // @include centerAlign;
     
-    position: absolute;
-    top: 55%;
-    left: 50%;
+//     position: absolute;
+//     top: 55%;
+//     left: 50%;
     
-    transform: translate(-50%,-50%) scaleY(0);
-    // top: 55%;
+//     transform: translate(-50%,-50%) scaleY(0);
+//     // top: 55%;
     
-    height: 80%;
-    // opacity:0;
-    // height: 0px;
+//     height: 80%;
+//     // opacity:0;
+//     // height: 0px;
 
     
-    width: 90%;
-    overflow-y: scroll;
-    border-radius: 0.3rem;
+//     width: 90%;
+//     overflow-y: scroll;
+//     border-radius: 0.3rem;
 
-    &__members{
-        display: grid;
-        grid-template-rows: 8rem 25rem 8rem 25rem 25rem 25rem 25rem;
-        grid-template-columns: repeat(4,1fr);
-        grid-gap: 2rem;
-        margin:  0.5rem 2rem 5rem;
-    }
+//     &__members{
+//         display: grid;
+//         grid-template-rows: 8rem 25rem 8rem 25rem 25rem 25rem 25rem;
+//         grid-template-columns: repeat(4,1fr);
+//         grid-gap: 2rem;
+//         margin:  0.5rem 2rem 5rem;
+//     }
 
-    .heading__tertiary {
-        font-family: 'Audiowide', cursive !important;
-        font:3rem uppercase;
-        padding-top: 1rem;
-        grid-column: 1 / -1;
-        text-align: center;
-    }
+//     .heading__tertiary {
+//         font-family: 'Audiowide', cursive !important;
+//         font:3rem uppercase;
+//         padding-top: 1rem;
+//         grid-column: 1 / -1;
+//         text-align: center;
+//     }
 
-    &__member {
-        padding: 1.5rem;
-        font-size: 3rem;
-        border-radius: 0.4rem;
-        text-align: center;
-        background-color: rgb(52, 52, 50);
-    }
-}
+//     &__member {
+//         padding: 1.5rem;
+//         font-size: 3rem;
+//         border-radius: 0.4rem;
+//         text-align: center;
+//         background-color: rgb(52, 52, 50);
+//     }
+// }
