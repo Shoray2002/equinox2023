@@ -19,9 +19,10 @@ let yheight,xwidth;
 
 
 
-
-var  e1 = gsap.timeline({defaults:{duration: 0.5}},{paused:true})
-var  e2 = gsap.timeline({defaults:{duration: 0.5}},{paused:true})
+//about
+var  e1 = gsap.timeline({defaults:{duration: 0.5}},{paused:true}) 
+// sponsors
+var  e2 = gsap.timeline({defaults:{duration: 0.5}},{paused:true}) 
 
 const fn_event_1 = () => {
     
@@ -37,8 +38,8 @@ e1.to("#countdown",{duration:0.2, opacity:0})
     .to(".background__back",{duration:0.1, opacity:1})
     .to(".about__heading,.about__home",{duration:0.1, opacity:1})
     .to(".about__heading--bg",{opacity:1})
-    .to(".about__images",{scale:1})
-    .to(".about__details",{scale:1},"-=1")
+    .to(".about__images",{scale:1,opacity:1})
+    .to(".about__details",{scale:1,opacity:1},"-=1")
 }
 
 

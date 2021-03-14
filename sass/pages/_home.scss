@@ -218,7 +218,8 @@
         width: 40vw;
         // height: 40vh;
         // event
-        transform: scale(0);
+        transform: scale(0.7);
+        opacity: 0;
         // background-color: rgb(243, 160, 160);
         // opacity: 1;
 
@@ -244,7 +245,10 @@
         // position: absolute; 
         display: flex;  
         // padding: 1rem;
-        transform: scale(0);
+
+        // event
+        transform: scale(0.8);
+        opacity: 0;
 
     }
 

@@ -2,7 +2,8 @@
 
 /* width */
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 7px;
+    height: 7px;
   }
   
   /* Track */
@@ -12,8 +13,8 @@
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgb(240, 227, 227); 
-    
+    // background: rgb(255, 0, 0); 
+    width: 5px;
     border-radius:10px;
   }
   
@@ -158,6 +159,7 @@
       font-family: 'Audiowide';
       font-size: 1.8rem;
       transition: all 0.4s;
+      // color: rgb(191, 191, 191) !important;
       
       text-shadow: .5rem 2rem 2rem rgba(black, .2);
       
@@ -165,7 +167,6 @@
       //   // transform: skewY(2deg) skewX(15deg) scale(1.1);
       //   text-shadow: .5rem 1rem 2rem rgba(black, .2);
       // }
-      
     }
 
   }
@@ -179,7 +180,6 @@
 
         // width: 10%;
       position: fixed;
-
       display: flex;
 
 
@@ -190,6 +190,8 @@
       // margin-right: 10vw;
       height: 100vh;
       border-right: 0.7px solid rgb(224, 224, 224);
+      
+      // border-right: 0.7px solid rgb(29, 29, 29);
       // event
       height: 0vh;
       width: 0vw;
@@ -204,6 +206,7 @@
         opacity:0;
         h1{
             font-family: 'Audiowide';
+            // color: rgb(132, 0, 255);
         }
         transform: translateX(-100%);
     }

@@ -1,88 +1,130 @@
-// .events {
+.event{
 
-//     &__container {
-//         //temp
-//         font-size: 2rem;
-//         color: yellow;
-//         background-color: rgba(206, 200, 200, 0.238);
+    &--section{
+        
+        overflow: hidden;
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(255, 255, 255);
+        
+        background-color: rgb(0, 0, 0);
 
+        // event
+        z-index: 1;
+        // height: 10vh;
+        // width: 10vw;
+        
+        // transform: scale(0);
+    }
 
-//         font-family: 'Audiowide', cursive;
-//         width: 75%;
-//         height: 75%;
-//         @include centerAlign;
-//         top: 53%;
-//         display: flex;
-//         justify-content: space-around;
-//         align-items: center;
-//         padding: 4rem;
-//     }
+    
+    &__container{
 
-//     &__card{
-//         // background-color: rgb(0, 0, 0);
-//         height: 85%;
-//         width: 30%;
-//         box-shadow: -10px 10px  rgb(110, 243, 208),
-//                     10px -10px  rgb(110, 243, 208) ;
-//         position: relative;
-//         &-cover{
-//             background-color: rgb(255, 0, 115);
-//             height: 100%;
-//             // position: absolute;
-//             z-index: 10000;
-//         }
+        height: 100vh;
+        
+        // width: 96vw;
+        // height: 92vh;
+        
+        overflow: scroll !important;
+        overflow-x: hidden !important;
 
-//         img{
-//             position: absolute;
-//             height: 100%;
-//             width: 100%;
-//             filter:  opacity(0.6);
-//         }
-
-//         &::after{
-//             content: ' ';
-
-//             background-color: yellow;
-//             z-index: 5;
-//             position: absolute;
-//             top: 5%;
-//         }
-
-
-//         &:hover {
-//         }
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        position: relative;
 
         
-//     }
+        // background-color: rgb(168, 238, 118);
+    }
 
-//     &__heading {
-//         width: 40%;
-//         height: 75%;
-//         margin: 5rem;
+    
+    &__heading{
+        // @include marginCenter;
+        margin: 3rem auto;
+        text-align: center;
+        z-index: 10 !important;   
+
+        // event
+        // opacity:0;
+        h2{
+            text-transform: uppercase;
+            font-size: 5rem;
+        }
+
+        &:hover{
+            transform: skewY(2deg) skewX(15deg) scale(1.1);
+            text-shadow: .5rem 1rem 2rem rgba(black, .2);
+        }
+    }
+
+    
+    &__heading--bg{
+        @include centerAlign;
+        position: fixed;
+        // event
+        // height: 0rem;
+        // opacity: 0;
         
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: space-around;
-//         text-align: center;
+    }
 
-//         .formal{
-//             margin-left:-2rem ;
-//             padding: 1rem 3rem ;
-//             text-align: left;
-//         }
-        
-//         .informal{
-//             margin-right:-3rem ;
-//             text-align: right;
-//             padding: 1rem 3rem;
-//         }
+    &__row{
+        // background-color: rgb(34, 213, 17);
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-//         h1 {
+        // event
+        opacity: 0; 
 
-//             color: royalblue;
-//             background-color: rgb(225, 88, 150);
-//             text-transform: uppercase;
-//             font-size: 4rem;
-//         }
-//     }
-// }
+        &--heading{     
+            
+            font-family: 'Audiowide';
+            margin: 2rem;
+            // z-index: 3;
+            color: $color-primary-black;
+            text-shadow: .5rem 1rem 2rem rgba(black, .2);
+            h4{
+                font-size: 3rem;
+            }
+        }
+    }
+
+    
+    &__cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        // background-color: rgb(43, 245, 221);
+    }
+
+    // &__card{
+    //     margin: 2rem;
+    //     // z-index: 3;
+    //     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    //     img{
+    //         border-radius: 2px;
+    //         height: 25rem;
+    //         width: 25rem;   
+    //     }
+
+    //     transition: all 0.4s;
+
+    //     &:hover{
+    //         transform: scale(1.1);
+    //     }
+    // }
+}
+
+.event__heading--bg{
+    color: rgb(29, 28, 28);
+}
+
+.event__heading{
+    color: rgb(255, 255, 255);
+}

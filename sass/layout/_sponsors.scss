@@ -76,6 +76,8 @@
         justify-content: center;
         align-items: center;
 
+        margin-bottom: 4rem;
+
         // event
         opacity: 0;
 
@@ -105,10 +107,10 @@
     &__card{
         margin: 2rem;
         // z-index: 3;
-        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        // box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
         img{
             border-radius: 2px;
-            height: 25rem;
+            // height: 25rem;
             width: 25rem;   
         }
 
