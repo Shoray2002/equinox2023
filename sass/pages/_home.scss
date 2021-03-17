@@ -5,7 +5,7 @@
     color: rgb(255, 255, 255);
     font-family: 'Audiowide', cursive ;
     text-transform: capitalize;
-    // z-index: 10;
+    z-index: 1;
     
     // border: 1rem solid rgba(71, 71, 71, 0.694);
 
@@ -157,6 +157,8 @@
         width: 100vw;
         
         // event
+        
+        z-index: 1;
         height: 10vh;
         width: 10vw;
         transform: scale(0);
