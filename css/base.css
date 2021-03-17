@@ -239,6 +239,13 @@ button:focus {
 	overflow: hidden;
 }
 
+.section__title--icog{
+	font-size: 7.2vw;
+}
+
+
+
+
 .section__title span {
 	display: inline-block;
 }
@@ -273,7 +280,7 @@ button:focus {
 	list-style: none;
 	background: var(--color-bg-facts);
 	color: var(--color-text-facts);
-	white-space: nowrap;
+	white-space: wrap;
 }
 
 .section__facts-item {
