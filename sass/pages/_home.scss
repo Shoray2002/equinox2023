@@ -45,6 +45,7 @@
     .nav{
 
         &__category{
+            cursor: pointer;
         
             height: 20%;
             // background-color: rgb(86, 220, 9);   
@@ -99,6 +100,7 @@
         justify-content: space-around;
 
         &__img {
+            cursor: pointer;
         
             height: 30%;
             width: 80%;
