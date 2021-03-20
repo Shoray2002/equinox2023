@@ -24,7 +24,7 @@
         // z-index: 2 !important;   
         
         // event
-        opacity:0;
+        // opacity:0;
 
         &:hover{
             transform: skewY(2deg) skewX(15deg) scale(1.1);
@@ -93,7 +93,19 @@
             }
         }
     }
-
+    &__row2{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-bottom: 1.2rem;
+    }
+    &__column{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
     
     &__cards{
         display: flex;
