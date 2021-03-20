@@ -160,7 +160,7 @@
     &__tertiary{
       font-family: 'Audiowide';
       font-size: 1.8rem;
-      transition: all 0.4s;
+      transition: transform 0.4s;
       // color: rgb(191, 191, 191) !important;
       
       text-shadow: .5rem 2rem 2rem rgba(black, .2);
@@ -197,6 +197,12 @@
       // event
       height: 0vh;
       width: 0vw;
+
+      @for $i from 1 through 10{
+        &--#{$i}{
+          background-color: white;
+        }
+      }
     }
 
     &__back{  

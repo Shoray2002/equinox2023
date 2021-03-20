@@ -32,7 +32,7 @@ let yheight,xwidth;
 //about
 var  e1 = gsap.timeline({defaults:{duration: 0.4,}},{paused:true}) 
 // sponsors
-var  e2 = gsap.timeline({defaults:{duration: 0.4}},{paused:true}) 
+var  e2 = gsap.timeline({defaults:{}},{paused:true}) 
 
 // Team
 var  e3 = gsap.timeline({defaults:{duration: 0.4}},{paused:true}) 
@@ -40,8 +40,33 @@ var  e3 = gsap.timeline({defaults:{duration: 0.4}},{paused:true})
 
 
 const fn_event_1 = () => {
+
+    // e1.to("#countdown",{duration:0.01, opacity:0})
+    // .to("footer",{duration:0.01, opacity:0})
+    // .to(".nav__category,.home__container__img",{duration:0.02, opacity:0})
+    // .to(".countdown",{duration:0.01, opacity:0})
+    // .to(".about--section",{scale:1})
+    // .to(".about--section",{height:"100vh"})
+    // .to(".about--section",{duration: 0,width:"100vw",ease:"power4.out"})
+    // .to(".background__line",{height:"0vh",width:"10vw"})
+    // .to(".background__line--1",{height:"100vh"})
+    // .to(".background__line--2",{height:"100vh"},"-=0.30")
+    // .to(".background__line--3",{height:"100vh"},"-=0.30")
+    // .to(".background__line--4",{height:"100vh"},"-=0.30")
+    // .to(".background__line--5",{height:"100vh"},"-=0.30")
+    // .to(".background__line--6",{height:"100vh"},"-=0.30")
+    // .to(".background__line--7",{height:"100vh"},"-=0.30")
+    // .to(".background__line--8",{height:"100vh"},"-=0.30")
+    // .to(".background__line--9",{height:"100vh"},"-=0.30")
+    // .to(".background__line--10",{height:"100vh"},"-=0.30")
+    // .to(".background__back",{duration:0.01, opacity:1})
+    // .to(".about__heading,.about__home",{duration:0.01, opacity:1})
+    // .to(".about__heading--bg",{opacity:1})
+    // .to(".about__images",{scale:1,opacity:1})
+    // .to(".about__details",{scale:1,opacity:1},"-=1")
+
     
-e1.to("#countdown",{duration:0.01, opacity:0})
+    e1.to("#countdown",{duration:0.01, opacity:0})
     .to("footer",{duration:0.01, opacity:0})
     .to(".nav__category,.home__container__img",{duration:0.02, opacity:0})
     .to(".countdown",{duration:0.01, opacity:0})
@@ -55,6 +80,7 @@ e1.to("#countdown",{duration:0.01, opacity:0})
     .to(".about__heading--bg",{opacity:1})
     .to(".about__images",{scale:1,opacity:1})
     .to(".about__details",{scale:1,opacity:1},"-=1")
+
 }
 
 
@@ -64,16 +90,27 @@ const fn_event_2 = () => {
         .to("footer",{duration:0.01, opacity:0})
         .to(".nav__category,.home__container__img",{duration:0.02, opacity:0})
         .to(".countdown",{duration:0.01, opacity:0})
-        .to(".sponsors--section",{scale:1})
-        .to(".sponsors--section",{height:"100vh"})
-        .to(".sponsors--section",{duration: 1,width:"100vw",ease:"power4.out"})
-        .to(".background__line",{height:"10vh",width:"10vw"})
-        .to(".background__line",{height:"100vh"})
+        .to(".sponsors--section",{scale:1},"-=1")
+        .to(".sponsors--section",{duration:0.1,height:"100vh"},"-=1")
+        .to(".sponsors--section",{duration: 0,width:"100vw",ease:"power4.out"})
+        .to(".background__line",{width:"10vw"},"-=1")
+        // .to(".background__line",{height:"100vh"})    
+        // .to(".background__line",{height:"0vh",width:"10vw"})
+        .to(".background__line--1",{duration: 0.4,height:"100vh"})
+        .to(".background__line--2",{duration: 0.4,height:"100vh"},"-=0.30")
+        .to(".background__line--3",{duration: 0.4,height:"100vh"},"-=0.30")
+        .to(".background__line--4",{duration: 0.4,height:"100vh"},"-=0.30")
+        .to(".background__line--5",{duration: 0.4,height:"100vh"},"-=0.30")
+        .to(".background__line--6",{duration: 0.4,height:"100vh"},"-=0.30")
+        .to(".background__line--7",{duration: 0.4,height:"100vh"},"-=0.30")
+        .to(".background__line--8",{duration: 0.4,height:"100vh"},"-=0.30")
+        .to(".background__line--9",{duration: 0.4,height:"100vh"},"-=0.30")
+        .to(".background__line--10",{duration: 0.4,height:"100vh"},"-=0.30")
         .to(".background__back",{duration:0.01, opacity:1})
         .to(".sponsors__heading--bg",{opacity:1})
         .to(".sponsors__heading",{duration:0.01, opacity:1})
-        .to(".sponsors__row",{duration:0.01,opacity:1})
-        .to(".sponsors__footer",{duration:0.01,opacity:1},"-=1")
+        .to(".sponsors__row",{duration:0.03,opacity:1})
+        .to(".sponsors__footer",{duration:0.0,opacity:1},"-=1")
 }
 
 
@@ -100,13 +137,13 @@ const fn_event_3 = () => {
     
 event_2.addEventListener('click',(e) => {
 
-    console.log("clicked");
 
     // e1.play();
 
     fn_event_2();
     
     e2.play();
+
 
     console.log("as");
 })
@@ -153,7 +190,8 @@ aboutHome.addEventListener('click',()=>{
 sponsorsHome.addEventListener('click',()=>{
     
 
-    console.log("as");
+    console.log("clicked back spon");
+
     e2.reversed() ? e2.play() : e2.reverse();
 })
 
