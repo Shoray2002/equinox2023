@@ -14,6 +14,8 @@
         width: 0vw;
         
         transform: scale(0);
+
+        
     }
 
     
@@ -93,7 +95,19 @@
             }
         }
     }
-
+    &__row2{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-bottom: 1.2rem;
+    }
+    &__column{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
     
     &__cards{
         display: flex;
