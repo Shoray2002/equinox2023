@@ -8,7 +8,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	/* Colors */
 	--color-text: #000;
-	--color-bg-main: #fff;
+	--color-bg-main: rgb(243, 236, 236);
 	--color-menu-item: #fff;
 	--color-menu-item-hover: #e0f3ca;
 	--color-bg-menu: #cbf3ee;
@@ -19,7 +19,7 @@ body {
 	--color-bg-more-2: #e0f3ca;
 	--color-bg-more-3: #f3cae8;
 	--color-bg-more-4: #cacaf3;
-	--color-nav: #ddd;
+	--color-nav: rgb(142, 138, 138);
 	--color-nav-hover: #000;
 	--color-link: #000;
 	--color-link-hover: #333;
@@ -231,7 +231,9 @@ button:focus {
 }
 
 .section__title {
-	font-size: 10vw;
+	/* font-size: 10vw; */
+	
+	font-size: 6vw;
 	text-transform: lowercase;
 	margin: 0;
 	letter-spacing: -0.35vw;
@@ -240,7 +242,7 @@ button:focus {
 }
 
 .section__title--icog{
-	font-size: 7.2vw;
+	/* font-size: 7.2vw; */
 }
 
 
@@ -270,7 +272,8 @@ button:focus {
 .section__img-inner {
 	width: 100%;
 	height: 100%;
-	background-size: cover;
+	background-size:contain;
+	background-repeat:no-repeat !important;
 	background-position: 50% 50%;
 }
 

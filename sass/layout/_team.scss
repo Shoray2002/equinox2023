@@ -36,9 +36,9 @@
         height: 80vh;
 
 
-        // @media only screen and (max-width: 768px) {    
-        //     flex-direction: column;
-        // }
+        @media only screen and (max-width: 768px) {    
+            flex-direction: column;
+        }
 
         
     }
@@ -66,12 +66,12 @@
         position: relative;
 
         
-        // @media only screen and (max-width: 768px) {    
-        //     overflow: scroll !important;
+        @media only screen and (max-width: 768px) {    
+            overflow: scroll !important;
     
-        //     // overflow-y: hidden !important;
-        //     overflow-x: hidden !important;
-        // }
+            // overflow-y: hidden !important;
+            // overflow-x: hidden !important;
+        }
 
         
         // background-color:     rgb(168, 238, 118);
