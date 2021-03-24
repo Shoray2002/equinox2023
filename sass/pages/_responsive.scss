@@ -1,0 +1,74 @@
+@media only screen and (max-width: $mobile-device) {
+    body{
+        position: relative;
+        overflow: hidden;
+    }
+
+    #countdown{
+        .artwork{
+            height: 25%;
+        }
+    }
+    main{
+        .home{
+            &__row{
+                justify-content: space-around;
+                width: 33vw;
+                .nav__category{
+                    span,a{
+                        font-size:1.4rem;
+                        line-height: 2rem;
+                        padding: 0 0 0 1rem;
+                    }
+                }
+            }
+            &__container{
+                &__img{
+                    img{
+                        height: 6rem;
+                        top:0;
+                    }
+                    span{
+                        font-size:1.4rem;
+                        top:25%;
+                    }
+                }
+                #event_3{
+                    position: absolute;
+                    top:10%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    img{
+                        height: 6rem;
+                        top:0;
+                    }
+                }
+                #event_4{
+                    margin-top: 55vh;
+                }
+            }
+        }
+    }
+    .countdown{
+        &__coming{
+            font-size: 1.4rem;
+            height: 4rem;
+            width: fit-content;
+        }
+        &__container{
+            width: 70vw;
+            height: 4rem;
+            padding: 1rem;
+        }
+        &__time{
+            span{
+                font-size: 2rem;
+            }
+        }
+    }
+    .footer{
+        &__container{
+            width:100vw;
+        }
+    }
+}
