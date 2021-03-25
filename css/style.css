@@ -1354,6 +1354,7 @@ body {
 
 @keyframes glitch-anim {
   0% {
+<<<<<<< HEAD
     clip: rect(71px, 9999px, 83px, 0);
     transform: skew(0.07deg); }
   5% {
@@ -1450,11 +1451,113 @@ body {
     transform: skew(0.07deg); }
   50% {
     clip: rect(33px, 9999px, 40px, 0);
+=======
+    clip: rect(69px, 9999px, 43px, 0);
+    transform: skew(0.09deg); }
+  5% {
+    clip: rect(15px, 9999px, 99px, 0);
+    transform: skew(0.03deg); }
+  10% {
+    clip: rect(22px, 9999px, 26px, 0);
+    transform: skew(0.1deg); }
+  15% {
+    clip: rect(59px, 9999px, 26px, 0);
+    transform: skew(0.1deg); }
+  20% {
+    clip: rect(83px, 9999px, 56px, 0);
+    transform: skew(0.03deg); }
+  25% {
+    clip: rect(3px, 9999px, 55px, 0);
+    transform: skew(0.1deg); }
+  30% {
+    clip: rect(50px, 9999px, 78px, 0);
+    transform: skew(0.04deg); }
+  35% {
+    clip: rect(73px, 9999px, 4px, 0);
+    transform: skew(0.02deg); }
+  40% {
+    clip: rect(85px, 9999px, 43px, 0);
+    transform: skew(0.06deg); }
+  45% {
+    clip: rect(73px, 9999px, 28px, 0);
+    transform: skew(0.07deg); }
+  50% {
+    clip: rect(92px, 9999px, 64px, 0);
+    transform: skew(0.09deg); }
+  55% {
+    clip: rect(4px, 9999px, 32px, 0);
+    transform: skew(0.09deg); }
+  60% {
+    clip: rect(60px, 9999px, 85px, 0);
+    transform: skew(0.01deg); }
+  65% {
+    clip: rect(38px, 9999px, 58px, 0);
+    transform: skew(0.02deg); }
+  70% {
+    clip: rect(29px, 9999px, 73px, 0);
+    transform: skew(0.04deg); }
+  75% {
+    clip: rect(61px, 9999px, 36px, 0);
+    transform: skew(0.01deg); }
+  80% {
+    clip: rect(70px, 9999px, 93px, 0);
+    transform: skew(0.05deg); }
+  85% {
+    clip: rect(36px, 9999px, 27px, 0);
+    transform: skew(0.01deg); }
+  90% {
+    clip: rect(38px, 9999px, 66px, 0);
+    transform: skew(0.08deg); }
+  95% {
+    clip: rect(57px, 9999px, 59px, 0);
+    transform: skew(0.05deg); }
+  100% {
+    clip: rect(18px, 9999px, 28px, 0);
+    transform: skew(0.02deg); } }
+
+@keyframes glitch-anim2 {
+  0% {
+    clip: rect(66px, 9999px, 39px, 0);
+    transform: skew(0.02deg); }
+  5% {
+    clip: rect(9px, 9999px, 72px, 0);
+    transform: skew(0.07deg); }
+  10% {
+    clip: rect(99px, 9999px, 62px, 0);
+    transform: skew(0.01deg); }
+  15% {
+    clip: rect(31px, 9999px, 12px, 0);
+    transform: skew(0.06deg); }
+  20% {
+    clip: rect(55px, 9999px, 88px, 0);
+    transform: skew(0.1deg); }
+  25% {
+    clip: rect(59px, 9999px, 47px, 0);
+    transform: skew(0.03deg); }
+  30% {
+    clip: rect(61px, 9999px, 32px, 0);
+    transform: skew(0.02deg); }
+  35% {
+    clip: rect(100px, 9999px, 96px, 0);
+    transform: skew(0.05deg); }
+  40% {
+    clip: rect(89px, 9999px, 93px, 0);
+    transform: skew(0.01deg); }
+  45% {
+    clip: rect(53px, 9999px, 5px, 0);
+    transform: skew(0.01deg); }
+  50% {
+    clip: rect(17px, 9999px, 91px, 0);
+    transform: skew(0.06deg); }
+  55% {
+    clip: rect(51px, 9999px, 7px, 0);
+>>>>>>> b7d07e896bfb6f3d8823319b0b103e6f47e98684
     transform: skew(0.06deg); }
   55% {
     clip: rect(71px, 9999px, 89px, 0);
     transform: skew(0.01deg); }
   60% {
+<<<<<<< HEAD
     clip: rect(91px, 9999px, 96px, 0);
     transform: skew(0.06deg); }
   65% {
@@ -1465,8 +1568,21 @@ body {
     transform: skew(0.02deg); }
   75% {
     clip: rect(71px, 9999px, 42px, 0);
+=======
+    clip: rect(98px, 9999px, 75px, 0);
+    transform: skew(0.07deg); }
+  65% {
+    clip: rect(21px, 9999px, 20px, 0);
+    transform: skew(0.06deg); }
+  70% {
+    clip: rect(45px, 9999px, 86px, 0);
+>>>>>>> b7d07e896bfb6f3d8823319b0b103e6f47e98684
     transform: skew(0.08deg); }
+  75% {
+    clip: rect(28px, 9999px, 27px, 0);
+    transform: skew(0.09deg); }
   80% {
+<<<<<<< HEAD
     clip: rect(85px, 9999px, 3px, 0);
     transform: skew(0.08deg); }
   85% {
@@ -1484,13 +1600,38 @@ body {
 
 @keyframes glitch-skew {
   0% {
+=======
+    clip: rect(1px, 9999px, 78px, 0);
+    transform: skew(0.02deg); }
+  85% {
+    clip: rect(53px, 9999px, 12px, 0);
+    transform: skew(0.1deg); }
+  90% {
+    clip: rect(62px, 9999px, 84px, 0);
+    transform: skew(0.1deg); }
+  95% {
+    clip: rect(41px, 9999px, 59px, 0);
+    transform: skew(0.04deg); }
+  100% {
+    clip: rect(90px, 9999px, 77px, 0);
+    transform: skew(0.08deg); } }
+
+@keyframes glitch-skew {
+  0% {
+    transform: skew(1deg); }
+  10% {
+>>>>>>> b7d07e896bfb6f3d8823319b0b103e6f47e98684
     transform: skew(1deg); }
   10% {
     transform: skew(0deg); }
   20% {
     transform: skew(0deg); }
   30% {
+<<<<<<< HEAD
     transform: skew(0deg); }
+=======
+    transform: skew(1deg); }
+>>>>>>> b7d07e896bfb6f3d8823319b0b103e6f47e98684
   40% {
     transform: skew(1deg); }
   50% {
@@ -1502,7 +1643,7 @@ body {
   80% {
     transform: skew(1deg); }
   90% {
-    transform: skew(0deg); }
+    transform: skew(1deg); }
   100% {
     transform: skew(1deg); } }
 
@@ -1544,12 +1685,13 @@ body {
     flex-direction: column;
     justify-content: space-between; }
   .home .nav__category {
-    cursor: pointer;
     height: 20%;
     margin: 2rem;
     border-radius: 0.3rem;
     position: relative;
     padding: 2rem; }
+    .home .nav__category span, .home .nav__category a {
+      cursor: pointer; }
     .home .nav__category span, .home .nav__category a {
       position: absolute;
       line-height: 3rem;
@@ -1583,7 +1725,6 @@ body {
     flex-direction: column;
     justify-content: space-around; }
     .home__container__img {
-      cursor: pointer;
       height: 30%;
       width: 80%;
       margin: 0 auto;
@@ -1597,6 +1738,7 @@ body {
         transform: translate(-50%, -50%);
         top: 10%; }
       .home__container__img span {
+        cursor: pointer;
         width: 100%;
         position: absolute;
         font-size: 2rem;
@@ -1694,3 +1836,118 @@ body {
   .about__image:hover {
     z-index: 10;
     transform: scale(1.2); }
+
+@media only screen and (max-width: 768px) {
+  body {
+    position: relative;
+    overflow: hidden; }
+  #countdown .artwork {
+    height: 25%; }
+  main .home__row {
+    justify-content: space-around;
+    width: 33vw; }
+    main .home__row .nav__category span, main .home__row .nav__category a {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      padding: 0 0 0 1rem; }
+  main .home__container__img img {
+    height: 6rem;
+    top: 0; }
+  main .home__container__img span {
+    font-size: 1.4rem;
+    top: 25%; }
+  main .home__container #event_3 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%); }
+    main .home__container #event_3 img {
+      height: 6rem;
+      top: 0; }
+  main .home__container #event_4 {
+    margin-top: 55vh; }
+  .countdown__coming {
+    font-size: 1.4rem;
+    height: 4rem;
+    width: fit-content; }
+  .countdown__container {
+    width: 70vw;
+    height: 4rem;
+    padding: 1rem; }
+  .countdown__time span {
+    font-size: 2rem; }
+  .footer__container {
+    width: 100vw; }
+  ::-webkit-scrollbar {
+    width: 0px;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */ }
+  .about--section {
+    overflow-y: auto;
+    overflow-x: hidden; }
+    .about--section .background__back {
+      top: 3.5vh;
+      left: 16vw; }
+      .about--section .background__back h1 {
+        font-size: 1.4rem; }
+  .about__container {
+    overflow-x: hidden;
+    overflow-y: scroll; }
+  .about__heading {
+    font-size: 1.4rem;
+    top: 2vh; }
+    .about__heading--bg h1 {
+      font-size: 65%; }
+  .about__images {
+    height: 44vh;
+    margin-top: 20vh; }
+  .about__image img {
+    height: 12rem; }
+  .about__image--1 {
+    top: 6vh !important; }
+  .about__image--2 {
+    top: 22vh !important;
+    left: 5rem; }
+  .about__image--3 {
+    top: 10vh !important;
+    left: 12rem; }
+  .about__details {
+    width: 85vw; }
+    .about__details span {
+      font-size: 1.5rem;
+      line-height: 2rem; }
+    .about__details p {
+      font-size: 1.5rem;
+      line-height: 2rem; }
+  .sponsors--section .background__back {
+    top: 3.5vh;
+    left: 16vw; }
+    .sponsors--section .background__back h1 {
+      font-size: 1.4rem; }
+  .sponsors__heading h2 {
+    font-size: 3rem; }
+  .sponsors__row {
+    margin-bottom: 2rem; }
+    .sponsors__row--heading {
+      margin: 1rem; }
+  .sponsors__row2 h4 {
+    font-size: 2rem;
+    text-align: center; }
+  .sponsors__footer a {
+    margin: unset !important;
+    font-size: 1.2rem; }
+  .team--section .background__back {
+    top: 3.5vh;
+    left: 16vw; }
+    .team--section .background__back h1 {
+      font-size: 1.4rem; }
+  .team__heading h2 {
+    font-size: 3rem; }
+  .team__row {
+    margin: unset; }
+  .team__row:last-child {
+    margin-right: 1rem; }
+  .team__card-img img {
+    height: 12rem;
+    width: 12rem; } }

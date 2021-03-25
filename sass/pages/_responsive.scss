@@ -1,0 +1,204 @@
+@media only screen and (max-width: $mobile-device) {
+    body{
+        position: relative;
+        overflow: hidden;
+    }
+
+    #countdown{
+        .artwork{
+            height: 25%;
+        }
+    }
+    main{
+        .home{
+            &__row{
+                justify-content: space-around;
+                width: 33vw;
+                .nav__category{
+                    span,a{
+                        font-size:1.4rem;
+                        line-height: 2rem;
+                        padding: 0 0 0 1rem;
+                    }
+                }
+            }
+            &__container{
+                &__img{
+                    img{
+                        height: 6rem;
+                        top:0;
+                    }
+                    span{
+                        font-size:1.4rem;
+                        top:25%;
+                    }
+                }
+                #event_3{
+                    position: absolute;
+                    top:10%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    img{
+                        height: 6rem;
+                        top:0;
+                    }
+                }
+                #event_4{
+                    margin-top: 55vh;
+                }
+            }
+        }
+    }
+    .countdown{
+        &__coming{
+            font-size: 1.4rem;
+            height: 4rem;
+            width: fit-content;
+        }
+        &__container{
+            width: 70vw;
+            height: 4rem;
+            padding: 1rem;
+        }
+        &__time{
+            span{
+                font-size: 2rem;
+            }
+        }
+    }
+    .footer{
+        &__container{
+            width:100vw;
+        }
+    }
+    ::-webkit-scrollbar {
+        width: 0px;  /* Remove scrollbar space */
+        background: transparent;  /* Optional: just make scrollbar invisible */
+    }
+    .about{
+        &--section{
+            overflow-y: auto;
+            overflow-x: hidden;
+            .background{
+                &__back{
+                    top:3.5vh;
+                    left:16vw;
+                    h1{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+        &__container{
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+        
+        &__heading{
+            font-size: 1.4rem;
+            top: 2vh;
+            &--bg{
+                h1{
+                    font-size: 65%;
+                }
+            }
+        }
+        &__images{
+            height: 44vh;
+            margin-top: 20vh;
+        }
+        &__image{
+            img{
+                height: 12rem;
+            }
+            &--1{
+                top:6vh !important;
+            }
+            &--2{
+                top:22vh !important;
+                left:5rem;
+            }
+            &--3{
+                top:10vh !important;
+                left:12rem;
+            }
+        }
+        &__details{
+            width: 85vw;
+            span{
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+            p{
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+        }
+    }
+    .sponsors{
+        &--section{
+            .background{
+                &__back{
+                    top:3.5vh;
+                    left:16vw;
+                    h1{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+        &__heading{
+            h2{
+                font-size: 3rem;
+            }
+        }
+        &__row{
+            margin-bottom: 2rem;
+            &--heading{
+                margin:1rem;
+            }
+        }
+        &__row2{
+            h4{
+                font-size: 2rem;
+                text-align: center;
+            }
+        }
+        &__footer{
+            a{
+                margin: unset !important;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .team{
+        &--section{
+            .background{
+                &__back{
+                    top:3.5vh;
+                    left:16vw;
+                    h1{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+        &__heading{
+            h2{
+                font-size: 3rem;
+            }
+        }
+        &__row{
+            margin:unset;
+        }
+        &__row:last-child{
+            margin-right: 1rem;
+        }
+        &__card-img{
+            img{
+                height: 12rem;
+                width: 12rem;
+            }
+        }
+    }
+}
