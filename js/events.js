@@ -9,7 +9,7 @@ window.addEventListener('load',() => {
 // ///////////////////////EVENTS FUNC/////////////
 
 
-const event_1 = document.querySelector('#event_1');//workshop
+const event_1 = document.querySelector('#event_1');//conclave Workshop
 const event_2 = document.querySelector('#event_2');//sponsors
 const event_3 = document.querySelector('#event_3');//home heading
 const event_4 = document.querySelector('#event_4');//about
@@ -19,6 +19,7 @@ const event_6 = document.querySelector('#event_6');//team
 const aboutHome = document.querySelector('#about__home');
 const teamHome = document.querySelector('#team__home');
 const sponsorsHome = document.querySelector('#sponsors__home');
+const workshopHome = document.querySelector('#workshop__home');
 
 
 
@@ -32,38 +33,18 @@ let yheight,xwidth;
 //about
 var  e1 = gsap.timeline({defaults:{duration: 0.4,}},{paused:true}) 
 // sponsors
-var  e2 = gsap.timeline({defaults:{}},{paused:true}) 
+var  e2 = gsap.timeline({defaults:{duration: 0.4}},{paused:true}) 
 
 // Team
 var  e3 = gsap.timeline({defaults:{duration: 0.4}},{paused:true}) 
 
+//conclave Workshop
+var  e4 = gsap.timeline({defaults:{duration: 0.4}},{paused:true}) 
+
+
 
 
 const fn_event_1 = () => {
-
-    // e1.to("#countdown",{duration:0.01, opacity:0})
-    // .to("footer",{duration:0.01, opacity:0})
-    // .to(".nav__category,.home__container__img",{duration:0.02, opacity:0})
-    // .to(".countdown",{duration:0.01, opacity:0})
-    // .to(".about--section",{scale:1})
-    // .to(".about--section",{height:"100vh"})
-    // .to(".about--section",{duration: 0,width:"100vw",ease:"power4.out"})
-    // .to(".background__line",{height:"0vh",width:"10vw"})
-    // .to(".background__line--1",{height:"100vh"})
-    // .to(".background__line--2",{height:"100vh"},"-=0.30")
-    // .to(".background__line--3",{height:"100vh"},"-=0.30")
-    // .to(".background__line--4",{height:"100vh"},"-=0.30")
-    // .to(".background__line--5",{height:"100vh"},"-=0.30")
-    // .to(".background__line--6",{height:"100vh"},"-=0.30")
-    // .to(".background__line--7",{height:"100vh"},"-=0.30")
-    // .to(".background__line--8",{height:"100vh"},"-=0.30")
-    // .to(".background__line--9",{height:"100vh"},"-=0.30")
-    // .to(".background__line--10",{height:"100vh"},"-=0.30")
-    // .to(".background__back",{duration:0.01, opacity:1})
-    // .to(".about__heading,.about__home",{duration:0.01, opacity:1})
-    // .to(".about__heading--bg",{opacity:1})
-    // .to(".about__images",{scale:1,opacity:1})
-    // .to(".about__details",{scale:1,opacity:1},"-=1")
 
     
     e1.to("#countdown",{duration:0.01, opacity:0})
@@ -132,8 +113,50 @@ const fn_event_3 = () => {
     .to(".team__card",{duration:0.01,opacity:1})
     // .to(".sponsors__footer",{duration:0.01,opacity:1},"-=1")
 }
+
+
+const fn_event_4 = () => {                
+    e4.to("#countdown",{duration:0.01, opacity:0})
+    .to("footer",{duration:0.01, opacity:0})
+    .to(".nav__category,.home__container__img",{duration:0.02, opacity:0})
+    .to(".countdown",{duration:0.01, opacity:0})
+    .to(".workshop--section",{scale:1},"-=1")
+    .to(".workshop--section",{duration:0.1,height:"100vh"},"-=1")
+    .to(".workshop--section",{duration: 0,width:"100vw",ease:"power4.out"})
+    .to(".background__line",{width:"10vw"},"-=1")
+    // .to(".background__line",{height:"100vh"})    
+    // .to(".background__line",{height:"0vh",width:"10vw"})
+    .to(".background__line--1",{duration: 0.4,height:"100vh"})
+    .to(".background__line--2",{duration: 0.4,height:"100vh"},"-=0.30")
+    .to(".background__line--3",{duration: 0.4,height:"100vh"},"-=0.30")
+    .to(".background__line--4",{duration: 0.4,height:"100vh"},"-=0.30")
+    .to(".background__line--5",{duration: 0.4,height:"100vh"},"-=0.30")
+    .to(".background__line--6",{duration: 0.4,height:"100vh"},"-=0.30")
+    .to(".background__line--7",{duration: 0.4,height:"100vh"},"-=0.30")
+    .to(".background__line--8",{duration: 0.4,height:"100vh"},"-=0.30")
+    .to(".background__line--9",{duration: 0.4,height:"100vh"},"-=0.30")
+    .to(".background__line--10",{duration: 0.4,height:"100vh"},"-=0.30")
+    .to(".background__back",{duration:0.01, opacity:1})
+    .to(".workshop__container",{duration:0.01, opacity:1})
+    .to(".workshop__heading",{ duration:0.3,scale:1,opacity:1})
+
+    // .to(".sponsors__row",{duration:0.03,opacity:1})
+    // .to(".sponsors__footer",{duration:0.0,opacity:1},"-=1")
+}
+
     
+  
+event_1.addEventListener('click',(e) => {
+
+
+    // e1.play();
+
+    fn_event_4();
     
+    e4.play();
+
+    console.log("as");
+})
     
 event_2.addEventListener('click',(e) => {
 
@@ -186,10 +209,7 @@ aboutHome.addEventListener('click',()=>{
     e1.reversed() ? e1.play() : e1.reverse();
 })
 
-
-sponsorsHome.addEventListener('click',()=>{
-    
-
+sponsorsHome.addEventListener('click',()=>{  
     console.log("clicked back spon");
 
     e2.reversed() ? e2.play() : e2.reverse();
@@ -200,6 +220,12 @@ teamHome.addEventListener('click',()=>{
     e3.reversed() ? e3.play() : e3.reverse();
 })
 
+workshopHome.addEventListener('click',()=>{
+
+    console.log("clicked back concla");
+
+    e4.reversed() ? e4.play() : e4.reverse();
+})
 
 
 

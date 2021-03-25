@@ -1,91 +1,338 @@
-// .workshop{
+.workshop{
 
-//     // display: none;
-//     // width: 0%;
-//     // opacity: 0  ;
+    &--section{
+        
+        overflow: hidden;
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        // background-color: rgb(255, 255, 255);
+        // background-color: #E8E8EC;
+        
+        // background-color: rgb(0, 0, 0);
+
+        // event
+        z-index: 1;
+        height: 0vh;
+        width: 0vw;
+        
+        transform: scale(0);
+
+        .background__line{                
+            border-right: 0.7px solid #d0d0e4 !important;         
+        @for $i from 1 through 10{
+            &--#{$i}{
+            background-color: #E8E8EC !important;
+            }
+        }
+        }
+        
+        // overflow: scroll !important;
+        // overflow-x: hidden !important;
+    }
 
     
-//     width: 85%;
-//     z-index: 10;
+    &__container{
 
+        height: 100vh;
+        
+        // width: 80vw;
+        // height: 92vh;
+        
+        overflow: scroll !important;
+        overflow-x: hidden !important;
 
-//     color: rgb(176, 53, 73);
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        position: relative;
+        @include marginCenter;
 
-//     // @include centerAlign;
-//     height:70%;
-//     top: 55%;
+        // event
+        opacity: 0;
+    }
+
     
-//     position: absolute;
-//     top: 55%;
-//     left: 50%;
-    
-//     transform: translate(-50%,-50%) scaleX(0);
+    &__heading{
+        // @include marginCenter;
+        // margin: 3rem auto;
+        // background-color: rgb(178, 243, 150);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        margin: 25vh;
 
-//     &__container{
-//         // height: 100%;
+        // transform: translateY(-50%) scale(0.9);
+        // top: 40%;
+        // text-align: center;
+        z-index: 10 !important;
+        
+        position: relative;
 
-//     }
-    
-//     &__cards{
-//         display: flex;
-//         justify-content: center;
-//         height: 100%;
-//         background-color: rgb(127, 124, 124);
-//         border-radius: 0.4rem;
-//     }
+        // event
+        opacity:0;
+        transform: scale(0.9);
+        img{
+            height: 5rem;
+        }
 
-//     &__card{
+        h1{
+            font-size: 2rem;
+            font-family: 'Kaushan Script', cursive;
+        }
 
-//         width: 50%;
-
-//         height: 80%;
-//         background-color: rgb(52, 52, 50);
-//         border-radius: 0.4rem;
-//         margin:auto 1.5rem;
-//         flex: 1;
-//         text-align: center;
-//         padding: 1.5rem;
-
-//         &:hover {
-//             .workshop__card{
-//                 &__title{
-//                     transform: translateY(2rem) rotate(0deg);
-//                 }
-//                 &__details{
-//                     opacity: 1;
-//                 }
-//             }
-//         }
-
-//         &__title{
+        h2{
+            text-transform: capitalize;
+            font-size: 15rem;
+            font-family: 'Kaushan Script', cursive;
+            // z-index: 10 !important;   
             
-//             font-size: 4rem;
-//             text-transform: uppercase;
-//             transform-origin: center;
-//             transform: translateY(16rem) rotate(-90deg);
-//             transition: all 1s;
-//         }
+            &::before{
+                position: absolute;
+                @include centerAlign;
+                content: "";    
+                height: 2rem;
+                background-color: #E91E63;
+                z-index: -1 !important;
+                width: 120rem;
+                top: 53%
+            }
+        }
 
-//         &__details {
-//             text-transform: capitalize;
-//             font-size: 2rem;
-//             padding: 10rem 1rem;
-//             opacity: 0;
-//             transition: all 1s;
-//             color:  rgb(176, 53, 73);
-//         }
+        h5{
+            font-size: 2rem;
+            font-family: Mulish;
+            font-weight: 100;
+            margin-bottom: 4rem;
+            text-transform: capitalize;
+        }
 
-//         &__bgImg {
-//             position: absolute;
-//             img{
-//                 height: 15rem;
-//                 display: none;
-//             }
-//         }
-//     }
+        h4{
+            font-size: 2rem;
+            font-family: Mulish;
+            font-weight: 800;
+            margin-bottom: 4rem;
+            text-transform: uppercase;
+            color: rgb(54, 50, 50);  
+            
+            display:inline-block;
+            transform:scale(1,0.8) !important;
+            letter-spacing: 1rem;
+            margin: 2rem ;
+        }
 
-// }
+        &--link{
+            // padding: 1rem;
+            a{  
+                font-family: Mulish;
+                font-weight: 100;
+                margin-top: 5rem;
+                text-decoration: none;
+                font-size: 2.2rem;
+                color: black;
+                border: 1px solid black;
+                padding: 1rem 3rem;
+                transition: all 0.5s;
 
-// #workshop__card--1 {
-//     // flex: 1;
-// }
+                &:hover{
+                    padding: 1rem 4rem;
+                }
+            }
+            
+        }
+
+        // &:hover{
+        //     transform: skewY(2deg) skewX(15deg) scale(1.1);
+        //     text-shadow: .5rem 1rem 2rem rgba(black, .2);
+        // }
+    }
+
+    &__about{
+
+        width: 80vw;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 5rem;
+
+        // event
+        // opacity: 0;
+
+        p{
+            font-size: 2rem;
+            // margin: 2rem;
+        }
+
+        &--1,&--2{
+            // background-color: rgb(226, 167, 103);
+            width: 37vw;
+
+            h3{
+                font-size: 4rem;                
+                font-family: 'Kaushan Script';
+
+                // font-family: Pridi;
+                position: relative;
+                margin-bottom: 2.5rem;
+
+                &::after{
+                    content: ' ';
+                    position: absolute;
+                    @include centerAlign;
+                    // left: 0;
+                    // top: 1rem;
+                    margin-top: 2.5rem;
+                    height: 0.03rem;
+                    width: 37vw;
+                    background-color: rgb(0, 0, 0);
+                    // z-index: -1;
+                }
+            }
+
+            p{
+                font-family: Pridi;
+                font-weight: 100;
+                line-height: 2.5rem;
+                // word-spacing: 1rem;
+                letter-spacing: 0.1rem;
+            }
+
+            position: relative;
+
+            
+            &::after{
+                content: ' ';
+                position: absolute;
+                @include centerAlign;
+                // left: 0;
+                top: 100%;
+                margin-top: 2.5rem;
+                height: 0.03rem;
+                width: 37vw;
+                background-color: rgb(0, 0, 0);
+                // z-index: -1;
+            }
+
+        }
+
+        &--1{
+            width: 40vw;
+
+            h3{
+                &::after{
+                    width: 40vw;
+                }
+            }
+            &::after{
+                width: 40vw;
+            }
+        }
+    }
+
+
+    &__cards{
+        width: 80vw;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom:5rem;
+
+        &--heading{
+            font-size: 5rem;
+            margin: 5rem;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+    }
+
+    &__card{
+        height: 20rem;
+        width: 50rem;
+        margin: 1rem;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #E8E8EC;
+        transition: all 0.5s;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0.1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 0.1px 2px 0px;
+        transform: skew(-20deg);
+        &--img{
+            // background-color: rgb(106, 106, 235);
+            shape-outside: circle(50% at 50% 50%); 
+            transform: skew(20deg);
+            img{
+                height: 15rem;
+                width: 15rem;
+                border-radius: 50%;
+            }
+            padding: 3rem;
+            
+            border-radius: 50%;
+        }
+
+        &--links{
+            
+            img{
+                height: 2rem;
+                width: 2rem;
+            }
+        }
+
+        &--name{
+                
+            transform: skew(20deg);
+            
+            text-transform: capitalize;
+            h3{
+                font-family: Mulish;
+                font-size: 2.3rem;
+            }
+            h4{
+                font-family: Pridi;
+                font-weight: 200;
+                font-size: 2rem;
+                // font-stretch: condensed;
+
+
+            }
+            // margin:0.5rem 0;
+        }
+
+        &--text{
+            
+            // transform: skew(20deg);
+            
+            text-transform: capitalize;
+            line-height: 1.8rem;
+            p{
+                font-family: Mulish;
+                font-size: 1.5rem;
+            }
+        }
+
+
+        &:hover{
+            transform: scale(1.01) translateY(-1rem) skew(-20deg);
+            box-shadow: rgba(58, 58, 117, 0.25) 0px 2px 5px -1px, rgba(41, 53, 98, 0.3) 0px 1px 3px -1px;
+        }
+    }
+}
+
+.event__heading--bg{
+    color: rgb(29, 28, 28);
+}
+
+.event__heading{
+    color: rgb(255, 255, 255);
+}
