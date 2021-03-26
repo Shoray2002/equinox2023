@@ -5,20 +5,41 @@
     }
 
     #countdown{
+        left: 33%;
         .artwork{
-            height: 25%;
+            height: 30%;
         }
     }
     main{
         .home{
             &__row{
+                &.row{
+                    &--1 > *{
+                        display: none;
+                    }
+                    &--2 > div:last-child{
+                        display: none;
+                    }
+                    &--3 > *{
+                        display: block !important;
+                    }
+                    &--3{
+                        height: 50%;
+                        margin-top: 25vh;
+                    }
+                }
                 justify-content: space-around;
                 width: 33vw;
                 .nav__category{
+                    margin: 1rem;
                     span,a{
-                        font-size:1.4rem;
+                        font-size:1.7rem;
                         line-height: 2rem;
-                        padding: 0 0 0 1rem;
+                        padding: 0 0 0 0rem;
+                        top: unset;
+                        left: 85%;
+                        transform: translate(-100%, -50%);
+                        
                     }
                 }
             }
@@ -30,7 +51,7 @@
                     }
                     span{
                         font-size:1.4rem;
-                        top:25%;
+                        top:35%;
                     }
                 }
                 #event_3{
@@ -38,6 +59,7 @@
                     top:10%;
                     left: 50%;
                     transform: translateX(-50%);
+                    z-index: -1;
                     img{
                         height: 6rem;
                         top:0;
@@ -72,8 +94,8 @@
         }
     }
     ::-webkit-scrollbar {
-        width: 0px;  /* Remove scrollbar space */
-        background: transparent;  /* Optional: just make scrollbar invisible */
+        width: 3px;  /* Remove scrollbar space */
+        background: rgba(black, .2);  /* Optional: just make scrollbar invisible */
     }
     .about{
         &--section{
@@ -88,15 +110,27 @@
                     }
                 }
             }
+            .heading__tertiary{
+                display: none;
+            }
         }
         &__container{
             overflow-x: hidden;
-            overflow-y: scroll;
+            overflow-y: scroll;    
+            padding-bottom: 8rem;
         }
         
         &__heading{
-            font-size: 1.4rem;
-            top: 2vh;
+            font-family: 'Audiowide';
+            transition: transform 0.4s;
+            text-shadow: .5rem 2rem 2rem rgba(black, .2);
+            margin: 3rem;
+            text-align: center;
+            top: 0;
+            left:45%;
+            h2{
+                font-size: 3rem;
+            }
             &--bg{
                 h1{
                     font-size: 65%;
@@ -104,8 +138,8 @@
             }
         }
         &__images{
-            height: 44vh;
-            margin-top: 20vh;
+            height: 45vh;
+            margin-top: 45vh;
         }
         &__image{
             img{
@@ -182,6 +216,9 @@
                     }
                 }
             }
+            .heading__primary{
+                font-size: 3rem;
+            }
         }
         &__heading{
             h2{
@@ -192,7 +229,8 @@
             margin:unset;
         }
         &__row:last-child{
-            margin-right: 1rem;
+            margin-right: unset;
+            padding-bottom:8rem;
         }
         &__card-img{
             img{

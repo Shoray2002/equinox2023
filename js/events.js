@@ -16,6 +16,10 @@ const event_3 = document.querySelector('#event_3>span');//home heading
 const event_4 = document.querySelector('#event_4>span');//about
 const event_5 = document.querySelector('#event_5>a');//events
 const event_6 = document.querySelector('#event_6>span');//team
+
+const event2_1 = document.querySelector('#event2_1>span');//conclave Workshop
+const event2_2 = document.querySelector('#event2_2>span');//sponsors
+const event2_3 = document.querySelector('#event2_3>span');//home heading
 // =======
 // const event_1 = document.querySelector('#event_1>span');//workshop
 // const event_2 = document.querySelector('#event_2>span');//sponsors
@@ -156,41 +160,29 @@ const fn_event_4 = () => {
     
   
 event_1.addEventListener('click',(e) => {
-
-
-    // e1.play();
-
     fn_event_4();
-    
     e4.play();
-
-    console.log("as");
 })
-    
+event2_1.addEventListener('click',(e) => {
+    fn_event_4();
+    e4.play();
+})
 event_2.addEventListener('click',(e) => {
-
-
-    // e1.play();
-
     fn_event_2();
-    
     e2.play();
-
-
+})
+event2_2.addEventListener('click',(e) => {
+    fn_event_2();
+    e2.play();
+})
+event_4.addEventListener('click',(e) => {
+    fn_event_1();
+    e1.play();
     console.log("as");
 })
-
-
-event_4.addEventListener('click',(e) => {
-
-    console.log("clicked");
-
-    // e1.play();
-
+event2_4.addEventListener('click',(e) => {
     fn_event_1();
-
     e1.play();
-
     console.log("as");
 })
 
