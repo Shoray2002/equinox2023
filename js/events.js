@@ -10,12 +10,12 @@ window.addEventListener('load',() => {
 
 
 // <<<<<<< HEAD
-const event_1 = document.querySelector('#event_1');//conclave Workshop
-const event_2 = document.querySelector('#event_2');//sponsors
-const event_3 = document.querySelector('#event_3');//home heading
-const event_4 = document.querySelector('#event_4');//about
-const event_5 = document.querySelector('#event_5');//events
-const event_6 = document.querySelector('#event_6');//team
+const event_1 = document.querySelector('#event_1>span');//conclave Workshop
+const event_2 = document.querySelector('#event_2>span');//sponsors
+const event_3 = document.querySelector('#event_3>span');//home heading
+const event_4 = document.querySelector('#event_4>span');//about
+const event_5 = document.querySelector('#event_5>a');//events
+const event_6 = document.querySelector('#event_6>span');//team
 // =======
 // const event_1 = document.querySelector('#event_1>span');//workshop
 // const event_2 = document.querySelector('#event_2>span');//sponsors
