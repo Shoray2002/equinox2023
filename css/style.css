@@ -953,9 +953,9 @@ body {
   font-family: Pridi, Arial, sans-serif;
   position: relative;
   overflow: hidden;
-  margin: 10px;
-  min-width: 220px;
-  max-width: 310px;
+  margin: 20px;
+  min-width: 240px;
+  max-width: 330px;
   width: 100%;
   background: #ffffff;
   color: #000000; }
@@ -1037,17 +1037,17 @@ body {
   -webkit-transition: all 0.35s;
   transition: all 0.35s; }
 
-.workshop__card figure.snip0042.blue {
-  background: #7DCADC; }
+.workshop__card figure.snip0042.brown {
+  background: #FEFEFB; }
 
-.workshop__card figure.snip0042.blue:after {
-  background: #164666; }
+.workshop__card figure.snip0042.brown:after {
+  background: #75242F; }
 
-.workshop__card figure.snip0042.red {
-  background: #F09292; }
+.workshop__card figure.snip0042.black {
+  background: #FEFEFB; }
 
-.workshop__card figure.snip0042.red:after {
-  background: #6d2018; }
+.workshop__card figure.snip0042.black:after {
+  background: #0F1314; }
 
 .workshop__card figure.snip0042.yellow {
   background: #FCC681; }
@@ -1058,7 +1058,7 @@ body {
 .workshop__card figure.snip0042:hover:after,
 .workshop__card figure.snip0042.hover:after {
   -webkit-transform: skewX(-7deg) translateX(10px);
-  transform: skewX(-7deg) translateX(10px); }
+  transform: skewX(-6deg) translateX(38px); }
 
 .event__heading--bg {
   color: #1d1c1c; }
