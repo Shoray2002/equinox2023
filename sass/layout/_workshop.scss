@@ -160,7 +160,7 @@
         margin-bottom: 5rem;
 
         // event
-        opacity: 0;
+        // opacity: 0;
 
         p{
             font-size: 2rem;
@@ -255,25 +255,35 @@
 
     &__card{
 
-        figure.snip0042 {
-        font-family: Pridi, Arial, sans-serif;
+        .snip0042 {
+            font-family: Pridi, Arial, sans-serif;
 
-        position: relative;
-        overflow: hidden;
-        margin: 10px;
-        min-width: 220px;
-        max-width: 310px;
-        width: 100%;
-        background: #ffffff;
-        color: #000000;
+            position: relative;
+            overflow: hidden;
+            margin: 10px;
+            width: 30rem;
+            // width: 100%;
+            background: #e2e2e2;
+            color: #000000;
+            margin: 3rem;
+
+            &--img{
+                height: 30rem;
+                width: 30rem;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            
+            transition: all 0.5s;
+
+            &:hover{
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+            }
+
         }
-        figure.snip0042 * {
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        }
-        figure.snip0042 > img {
-        max-width: 100%;
-        }
+
         figure.snip0042 figcaption {
         padding: 20px 30px 20px 25%;
         position: relative;
@@ -282,7 +292,7 @@
         figure.snip0042 figcaption p {
         margin: 0;
         text-align: right;
-        padding: 10px 0;
+        padding: 5px 0;
         right: 0;
         width: 100%;
         }
@@ -323,12 +333,13 @@
         opacity: 1;
         }
         figure.snip0042 .position {
-        width: 100%;
+        width: 30rem;
         text-align: right;
         padding: 8px 30px 13px;
         font-size: 2rem;
         opacity: 0.8;
         font-style: italic;
+        background-color: rgb(211, 208, 208);
         }
         figure.snip0042:after {
         position: absolute;
@@ -371,83 +382,6 @@
         }
 
     }
-
-    // &__card{
-    //     height: 20rem;
-    //     width: 50rem;
-    //     margin: 1rem;
-    //     padding: 1rem;
-    //     display: flex;
-    //     justify-content: space-between;
-    //     align-items: center;
-    //     background-color: #E8E8EC;
-    //     transition: all 0.5s;
-    //     box-shadow: rgba(0, 0, 0, 0.1) 0px 0.1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 0.1px 2px 0px;
-    //     transform: skew(-20deg);
-    //     &--img{
-    //         // background-color: rgb(106, 106, 235);
-    //         shape-outside: circle(50% at 50% 50%); 
-    //         transform: skew(20deg);
-    //         img{
-    //             height: 15rem;
-    //             width: 15rem;
-    //             border-radius: 50%;
-    //         }
-    //         padding: 3rem;
-            
-    //         border-radius: 50%;
-    //     }
-
-    //     &--links{
-            
-    //         img{
-    //             height: 2rem;
-    //             width: 2rem;
-    //         }
-    //     }
-
-    //     &--name{
-                
-    //         transform: skew(20deg);
-            
-    //         text-transform: capitalize;
-    //         h3{
-    //             font-family: Mulish;
-    //             font-size: 2.3rem;
-    //         }
-    //         h4{
-    //             font-family: Pridi;
-    //             font-weight: 200;
-    //             font-size: 2rem;
-    //             // font-stretch: condensed;
-
-
-    //         }
-    //         // margin:0.5rem 0;
-    //     }
-
-    //     &--text{
-            
-    //         // transform: skew(20deg);
-            
-    //         text-transform: capitalize;
-    //         line-height: 1.8rem;
-    //         p{
-    //             font-family: Mulish;
-    //             font-size: 1.5rem;
-    //         }
-    //     }
-
-
-    //     &:hover{
-    //         transform: scale(1.01) translateY(-1rem) skew(-20deg);
-    //         box-shadow: rgba(58, 58, 117, 0.25) 0px 2px 5px -1px, rgba(41, 53, 98, 0.3) 0px 1px 3px -1px;
-    //     }
-    // }
-
-
-
-
 }
 
 .event__heading--bg{
