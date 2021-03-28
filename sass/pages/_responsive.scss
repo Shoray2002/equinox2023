@@ -239,4 +239,100 @@
             }
         }
     }
+    .workshop{
+        &--section{
+            .background{
+                &__back{
+                    top:3.5vh;
+                    left:16vw;
+                    h1{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+        &__heading{
+            margin: 10vh;
+            img{
+                height: 10rem;
+            }
+            h1{
+                font-size: 2rem;
+                margin: 4vh;
+            }
+            h2{
+                font-size: 4rem;
+            }
+            h2::before{
+                top:39vh;
+            }
+            h4{
+                font-size: 1.4rem;
+                letter-spacing: 0.1rem;
+                margin-top: 8vh;
+            }
+            h5{
+                margin:4vh;
+            }
+            &--link{
+                margin:10vh;
+                a{
+
+                }
+            }
+        }
+        &__about{
+            margin-bottom: 0;
+            &--1,&--2{
+                width: 80vw;
+                margin-bottom: 10vh;
+                h3{
+                    text-align: center;
+                }
+                p{
+                    text-align: justify;
+                    line-height: 2rem;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        &__cards{
+            margin-bottom: 0;
+            &--heading{
+                font-size: 4rem;
+            }
+        }
+        &__cards:last-child{
+            margin-bottom: 5rem;
+        }
+        &__card{
+            figure.snip0042{
+                width: 80vw;
+                &--img{
+                    height: 45vh;
+                    width: 80vw;
+                }
+                figcaption{
+                    padding:5px 15px 5px 25%;
+                    h2{
+                        font-size: 1.8rem;
+                    }
+                }
+                .position{
+                    width: 80vw;
+                    font-size: 1.8rem;
+                    padding: 10px 0 10px 0;
+                    text-align: center;
+                }
+            }
+            figure.snip0042:after{
+                left:-36%;
+                width: 36%;
+                -webkit-transform: skewX( -18deg ) translateX(0px);
+                transform: skewX(-18deg) translateX(0px)
+            }
+            
+            
+        }
+    }
 }
