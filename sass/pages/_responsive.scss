@@ -254,7 +254,7 @@
         &__heading{
             margin: 10vh;
             img{
-                height: 10rem;
+                height: 13vh;
             }
             h1{
                 font-size: 2rem;
@@ -264,7 +264,7 @@
                 font-size: 4rem;
             }
             h2::before{
-                top:39vh;
+                top:35vh;
             }
             h4{
                 font-size: 1.4rem;
@@ -276,9 +276,6 @@
             }
             &--link{
                 margin:10vh;
-                a{
-
-                }
             }
         }
         &__about{
