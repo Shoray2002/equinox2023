@@ -89,17 +89,17 @@
             text-transform: capitalize;
             font-size: 15rem;
             font-family: 'Kaushan Script', cursive;
+            position: relative;
             // z-index: 10 !important;   
             
             &::before{
-                position: absolute;
                 @include centerAlign;
                 content: "";    
                 height: 2rem;
                 background-color: #E91E63;
                 z-index: -1 !important;
-                width: 120rem;
-                top: 53%
+                width: 105%;
+                top: 75%
             }
         }
 

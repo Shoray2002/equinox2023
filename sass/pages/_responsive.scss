@@ -261,10 +261,12 @@
                 margin: 4vh;
             }
             h2{
-                font-size: 4rem;
+                font-size: 4.5rem;
             }
             h2::before{
                 top:35vh;
+                height: 0.5rem;
+                top: 75%;
             }
             h4{
                 font-size: 1.4rem;
