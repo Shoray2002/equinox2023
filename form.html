@@ -87,14 +87,31 @@
                 <h2 class="animation a1">Welcome</h2>
                 <h4 class="animation a2">Enter details to join our News Letter</h4>
               </div>
-              <div class="form">
-                <input type="email" class="form-field animation a3" placeholder="Email Address">
-                <input type="Name" class="form-field animation a4" placeholder="Name">
-                <button class="animation a6">Join</button>
-              </div>
+              <form class="form" id="registerform">
+                <input type="email" name="email" class="form-field animation a3" placeholder="Email Address">
+                <input type="Name" name="name" class="form-field animation a4" placeholder="Name">
+                <button type="submit" class="animation a6">Join</button>
+              </form>
             </div>
             <div class="right"></div>
           </div>          
     </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $('#registerform').submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+            type: 'POST',
+            url: 'https://form-equinox.herokuapp.com/insert',
+            data: $(this).serialize(),
+            complete: function(xhr, textStatus) {
+                if(xhr.status == 200) window.alert("Success");
+                else if(xhr.status == 409) window.alert("This email is already signed up");
+                else if(xhr.status == 400) window.alert("Please fill the form correctly");
+            } 
+    });
+
+  })
+</script>
 </html>
