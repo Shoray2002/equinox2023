@@ -25,21 +25,24 @@
                     }
                     &--3{
                         height: 50%;
-                        margin-top: 25vh;
+                        margin-top: 28vh;
                     }
+                }
+                #event_7{
+                    margin-left: unset !important;
                 }
                 justify-content: space-around;
                 width: 33vw;
                 .nav__category{
                     margin: 1rem;
+                    padding: 0rem;
                     span,a{
-                        font-size:1.7rem;
+                        font-size:1.4rem;
                         line-height: 2rem;
                         padding: 0 0 0 0rem;
                         top: unset;
                         left: 85%;
-                        transform: translate(-100%, -50%);
-                        
+                        transform: translate(-100%, -50%);                        
                     }
                 }
             }
@@ -68,6 +71,7 @@
                 #event_4{
                     margin-top: 55vh;
                 }
+                
             }
         }
     }
