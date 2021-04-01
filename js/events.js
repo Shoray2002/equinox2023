@@ -228,8 +228,19 @@ workshopHome.addEventListener('click',()=>{
     e4.reversed() ? e4.play() : e4.reverse();
 })
 
+const callConclave = () => {
+    if(window.location.hash =="#conclave"){
+        fn_event_4();
+        e4.play();        
+        console.log("exec")
+    }
 
+    // console.log(window.location.hash)
 
+    console.log("call");
+}
+
+callConclave();
 
 
 
