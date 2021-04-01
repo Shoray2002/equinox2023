@@ -106,7 +106,7 @@
             url: 'https://form-equinox.herokuapp.com/insert',
             data: $(this).serialize(),
             complete: function(xhr, textStatus) {
-                if(xhr.status == 200) window.alert("Success");
+                if(xhr.status == 200) window.alert("Success,Join the Discord to stay updated!!");
                 else if(xhr.status == 409) window.alert("This email is already signed up");
                 else if(xhr.status == 400) window.alert("Please fill the form correctly");
             } 
