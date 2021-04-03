@@ -233,13 +233,14 @@ button:focus {
 
 .section__title {
 	/* font-size: 10vw; */
-	width: 50vw;
-	font-size: 8vw;
+	width: 42vw;
+	font-size: 6vw;
 	text-transform: lowercase;
 	margin: 0;
 	letter-spacing: -0.35vw;
 	position: relative;
 	overflow: hidden;
+	/* background-color: blue; */
 }
 
 .section__title--icog{
@@ -280,7 +281,7 @@ button:focus {
 }
 
 .section__facts {
-	padding: 1rem;
+	padding: -1rem;
 	margin: 0;
 	list-style: none;
 	background: var(--color-bg-facts);
@@ -560,7 +561,7 @@ button:focus {
 	}
 	.sections__index-inner {
 		display: block;
-		width: 1.20rem;
+		width: 1.30rem;
 	}
 	.sections__nav {
 		display: block;
@@ -636,7 +637,7 @@ button:focus {
 		grid-area: more;
 	}
 	.section__facts {
-		padding: 10vh 1vw;
+		padding: 6.5vh 1vw;
 		pointer-events: none;
 		background: transparent;
 		position: relative;
