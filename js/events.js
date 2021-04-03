@@ -10,7 +10,7 @@ window.addEventListener('load',() => {
 
 
 // <<<<<<< HEAD
-const event_1 = document.querySelector('#event_1');//conclave Workshop
+const event_1 = document.querySelector('#event_1>a');//conclave Workshop
 const event_2 = document.querySelector('#event_2>span');//sponsors
 const event_3 = document.querySelector('#event_3>span');//home heading
 const event_4 = document.querySelector('#event_4>span');//about
