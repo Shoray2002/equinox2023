@@ -59,6 +59,10 @@
         height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <div id="preloader"> 
+      <div class="loader"></div>
+    </div>
+
     <div class="section--form">
         <div class="container">
             <div class="left">
@@ -89,13 +93,20 @@
             type: 'POST',
             url: 'https://form-equinox.herokuapp.com/insert',
             data: $(this).serialize(),
+            beforeSend: function() {
+              $("#preloader").css('display','flex');
+           },
             complete: function(xhr, textStatus) {
-                if(xhr.status == 200) window.alert("Success,Join the Discord to stay updated!!");
+                $('#preloader').css('display','none');
+                if(xhr.status == 200) window.alert("Success, Join the Discord to stay updated!!");
                 else if(xhr.status == 409) window.alert("This email is already signed up");
                 else if(xhr.status == 400) window.alert("Please fill the form correctly");
             } 
     });
 
   })
+$(window).load(function() { 
+})
+</script>
 </script>
 </html>
