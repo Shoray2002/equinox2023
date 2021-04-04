@@ -26,14 +26,18 @@
                     &--3{
                         height: 50%;
                         margin-top: 25vh;
+                        #event_7{
+                            margin-left: unset !important;
+                        }
                     }
                 }
                 justify-content: space-around;
                 width: 33vw;
                 .nav__category{
                     margin: 1rem;
+                    padding: 1rem;
                     span,a{
-                        font-size:1.7rem;
+                        font-size:1.6rem;
                         line-height: 2rem;
                         padding: 0 0 0 0rem;
                         top: unset;
@@ -277,7 +281,15 @@
                 margin:4vh;
             }
             &--link{
-                margin:10vh;
+                margin: 5vh;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                align-items: center;
+                a{
+                    width: fit-content;
+                    padding: 1rem 2rem;
+                }
             }
         }
         &__about{
