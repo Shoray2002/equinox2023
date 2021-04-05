@@ -492,20 +492,26 @@ button:focus {
 		flex-direction: column;
 		justify-content: flex-end;
 		pointer-events: none;
-		z-index: 200;
+		z-index: 500;
 	}
 	.facts__toggle {
 		font-weight: bold;
 		cursor: pointer;
-		width: 48%;
-		padding: 0 0 0 5vw;
+		width: 45%;
+		padding: 2vw;
+		padding: 0 0 0 6vw;
 		margin: 0 0 0 2vw;
-		height: 5rem;
+		height: 4rem;
 		position: relative;
 		display: grid;
 		grid-template: 100% / 100%;
 		color: var(--color-text-facts);
 		pointer-events: auto;
+		background-color: rgba(0, 0, 0, 0.85);
+		box-shadow: 0rem 0rem 10rem rgb(0, 0, 0);
+		
+		/* display: flex;
+		justify-content: center; */
 	}
 	.facts__toggle:hover {
 		opacity: 0.6;
