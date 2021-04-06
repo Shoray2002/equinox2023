@@ -291,6 +291,9 @@ button:focus {
 	color: var(--color-text-facts);
 	white-space: wrap;
 }
+.section__facts a{
+	color: purple;
+}
 
 .section__facts-item {
 	margin: 0 0 1rem 0;
