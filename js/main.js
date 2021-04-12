@@ -346,6 +346,7 @@
 			};
 
 			this.DOM.menu.wrapper.classList.toggle('menu--open');
+			document.body.classList.toggle('stop-scrolling');
 
 			Promise.all([toggleMenuCtrlFn(), toggleMenuItemsFn()]).then(() => {
 				this.isMenuOpen = !this.isMenuOpen

@@ -724,8 +724,12 @@ button:focus {
 		padding: 0.5rem;
 	}
 	
-	.menu{
+	.menu--open{
 		height: 100%;
+	}
+	.stop-scrolling{
+		height: 100%;
+		overflow: hidden;
 	}
 	.title{
 		font-size: 1.35rem !important;
