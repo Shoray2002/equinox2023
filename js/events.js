@@ -1,6 +1,6 @@
 ////////////////////////lOADER////////////////////////
 
-const timeCount = 50000;
+const timeCount = 4000;
 
 const counting = () => {
     for (let i = 1; i <= timeCount/1000; i++) {
@@ -12,23 +12,23 @@ const counting = () => {
 
 counting();
 
-// setTimeout(() => {
-    // const preload = document.querySelector('.preloader');
-    // preload.classList.add('preloader-finish');
-    // console.log("loaded")
-// },timeCount);
+setTimeout(() => {
+    const preload = document.querySelector('.preloader');
+    preload.classList.add('preloader-finish');
+    console.log("loaded")
+},timeCount);
 
 
-const preload = document.querySelector('.preloader');
+// const preload = document.querySelector('.preloader');
 
 // if (document.readyState === 'interactive') {
 // }
 
-document.onreadystatechange = function () {
-    if (document.readyState === 'complete') {
-        preload.classList.add('preloader-finish');
-    }
-}
+// document.onreadystatechange = function () {
+//     if (document.readyState === 'complete') {
+//         preload.classList.add('preloader-finish');
+//     }
+// }
 
 
 // $(document).ready(function() {
