@@ -1,9 +1,43 @@
 ////////////////////////lOADER////////////////////////
 
-window.addEventListener('load',() => {
-    const preload = document.querySelector('.preloader');
-    preload.classList.add('preloader-finish');
-})
+const timeCount = 50000;
+
+const counting = () => {
+    for (let i = 1; i <= timeCount/1000; i++) {
+        setTimeout(() => {
+        console.log(i);
+      }, i * 1000);
+    }
+}
+
+counting();
+
+// setTimeout(() => {
+    // const preload = document.querySelector('.preloader');
+    // preload.classList.add('preloader-finish');
+    // console.log("loaded")
+// },timeCount);
+
+
+const preload = document.querySelector('.preloader');
+
+// if (document.readyState === 'interactive') {
+// }
+
+document.onreadystatechange = function () {
+    if (document.readyState === 'complete') {
+        preload.classList.add('preloader-finish');
+    }
+}
+
+
+// $(document).ready(function() {
+//     setTimeout(function() {
+//         $('preloader').addClass('preloader-finish');
+//     }, 1500);
+// });
+
+
 
 
 // ///////////////////////EVENTS FUNC/////////////
@@ -235,10 +269,6 @@ const callConclave = () => {
         e4.play();        
         console.log("exec")
     }
-
-    // console.log(window.location.hash)
-
-    console.log("call");
 }
 
 callConclave();

@@ -1,9 +1,3 @@
-    /*
-
-Read the description <3
-
-*/
-
 function random(min, max) {
     if (max === null) {
         max = min;min = 0;
