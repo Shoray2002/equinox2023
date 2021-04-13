@@ -698,7 +698,7 @@ button:focus {
 	}
 }
 
-@media screen and (max-width: 54.9em), screen and (max-height: 39.9em) {
+@media screen and (max-width: 54.9em){
 
 	main{
 		position: relative;
@@ -746,13 +746,15 @@ button:focus {
 		right: 1rem;
 		position: absolute;
 	}
-	
+	.sections{
+		overflow-y: hidden;
+	}
 	.section{
 		display: flex;
 		flex-direction: column;
 		background-color: rgb(240, 246, 247);
 		margin-bottom: 5rem !important;
-		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;	
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 		box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 	}
 	.sections__header{
