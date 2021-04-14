@@ -73,11 +73,14 @@
 
               <div class="header">
                 <h2 class="animation a1">Welcome</h2>
-                <h4 class="animation a2">Enter details to join our News Letter</h4>
+                <h4 class="animation a2">Enter details to join our News Letter
+                </h4>
+                <span class="animation a4">(you agree to recieve emails from our sponsors)</span>
+                
               </div>
               <form class="form" id="registerform">
                 <input type="email" name="email" class="form-field animation a3" placeholder="Email Address">
-                <input type="Name" name="name" class="form-field animation a4" placeholder="Name">
+                <input type="Name" name="name" placeholder="Name" class="form-field animation a4">
                 <button type="submit" class="animation a6">Join</button>
               </form>
             </div>
@@ -95,7 +98,7 @@
             data: $(this).serialize(),
             beforeSend: function() {
               $("#preloader").css('display','flex');
-           },
+            },
             complete: function(xhr, textStatus) {
                 $('#preloader').css('display','none');
                 if(xhr.status == 200) window.alert("Success, Join the Discord to stay updated!!");

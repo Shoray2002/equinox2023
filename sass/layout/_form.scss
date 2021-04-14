@@ -53,6 +53,16 @@
   background-position: center;
 }
 
+.header{
+  
+  & > span{
+      
+    font-family: Mulish;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+}
 
 
 .header > h2 {
