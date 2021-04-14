@@ -1,6 +1,6 @@
 ////////////////////////lOADER////////////////////////
 
-const timeCount = 4000;
+const timeCount = 3000;
 
 const counting = () => {
     for (let i = 1; i <= timeCount/1000; i++) {
