@@ -166,7 +166,7 @@ html, body {
   }
   
   .cd-timeline-content .timeline-content-info .timeline-content-info-title, .cd-timeline-content .timeline-content-info .timeline-content-info-date {
-    width: calc(50% - 2px);
+    width: calc(100% - 2px);
     display: inline-block;
   }
   
