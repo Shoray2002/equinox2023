@@ -1733,10 +1733,10 @@ body {
 }
 
 .home .nav__category {
-  /* margin: 2rem; */
+  margin: 2rem;
   border-radius: 0.3rem;
   position: relative;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .home .nav__category span,
@@ -2303,7 +2303,7 @@ body {
 
 .morph-section {
   font-family: monospace;
-  color: #20dc80;
+  color: #EC008C;
   display: flex;
   font-weight: 1800;
   justify-content: center;
@@ -2321,7 +2321,7 @@ body {
 .donut-section {
   margin-top: 60px;
   font-family: monospace;
-  color: #20dc80;
+  color: #0EAFB3;
   display: flex;
   font-weight: 1800;
   justify-content: center;
@@ -2337,7 +2337,7 @@ body {
 }
 
 #output {
-  color: #20dc80;
+  color: #FBB040;
   font-size: 1.5rem;
   line-height: 0.55em;
   text-rendering: optimizeSpeed;

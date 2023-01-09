@@ -5,7 +5,6 @@ const timeCount = 3000;
 const counting = () => {
   for (let i = 1; i <= timeCount / 1000; i++) {
     setTimeout(() => {
-      console.log(i);
     }, i * 1000);
   }
 };
@@ -15,7 +14,6 @@ counting();
 setTimeout(() => {
   const preload = document.querySelector(".preloader");
   preload.classList.add("preloader-finish");
-  console.log("loaded");
 }, timeCount);
 
 // ///////////////////////EVENTS FUNC/////////////
