@@ -178,9 +178,9 @@ menu {
 summary {
   display: list-item;
 }
-canvas {
+/* canvas {
   display: inline-block;
-}
+} */
 template {
   display: none;
 }

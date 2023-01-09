@@ -1713,330 +1713,6 @@ body {
   text-align: center;
 }
 
-.glitch {
-  text-transform: uppercase;
-  position: relative;
-  color: white;
-  font-family: sans-serif;
-  font-size: 2.75rem;
-  letter-spacing: .3rem;
-  animation: glitch-skew 1s infinite linear alternate-reverse;
-}
-
-.glitch::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  left: 1.2px;
-  text-shadow: -1.2px 0 #ff00c1;
-  clip: rect(44px, 450px, 56px, 0);
-  animation: glitch-anim 5s infinite linear alternate-reverse;
-}
-
-.glitch::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  left: -1.2px;
-  text-shadow: -1.2px 0 #00fff9, 1.2px 1.2px #ff00c1;
-  animation: glitch-anim2 1s infinite linear alternate-reverse;
-}
-
-@keyframes glitch-anim {
-  0% {
-    clip: rect(1px, 9999px, 30px, 0);
-    transform: skew(0.06deg);
-  }
-
-  5% {
-    clip: rect(16px, 9999px, 8px, 0);
-    transform: skew(0.08deg);
-  }
-
-  10% {
-    clip: rect(19px, 9999px, 67px, 0);
-    transform: skew(0.04deg);
-  }
-
-  15% {
-    clip: rect(39px, 9999px, 84px, 0);
-    transform: skew(0.09deg);
-  }
-
-  20% {
-    clip: rect(46px, 9999px, 2px, 0);
-    transform: skew(0.03deg);
-  }
-
-  25% {
-    clip: rect(9px, 9999px, 86px, 0);
-    transform: skew(0.04deg);
-  }
-
-  30% {
-    clip: rect(42px, 9999px, 100px, 0);
-    transform: skew(0.02deg);
-  }
-
-  35% {
-    clip: rect(42px, 9999px, 9px, 0);
-    transform: skew(0.08deg);
-  }
-
-  40% {
-    clip: rect(90px, 9999px, 72px, 0);
-    transform: skew(0.1deg);
-  }
-
-  45% {
-    clip: rect(91px, 9999px, 5px, 0);
-    transform: skew(0.07deg);
-  }
-
-  50% {
-    clip: rect(53px, 9999px, 10px, 0);
-    transform: skew(0.07deg);
-  }
-
-  55% {
-    clip: rect(33px, 9999px, 98px, 0);
-    transform: skew(0.02deg);
-  }
-
-  60% {
-    clip: rect(87px, 9999px, 87px, 0);
-    transform: skew(0.09deg);
-  }
-
-  65% {
-    clip: rect(4px, 9999px, 85px, 0);
-    transform: skew(0.1deg);
-  }
-
-  70% {
-    clip: rect(6px, 9999px, 71px, 0);
-    transform: skew(0.03deg);
-  }
-
-  75% {
-    clip: rect(98px, 9999px, 72px, 0);
-    transform: skew(0.01deg);
-  }
-
-  80% {
-    clip: rect(100px, 9999px, 18px, 0);
-    transform: skew(0.05deg);
-  }
-
-  85% {
-    clip: rect(69px, 9999px, 5px, 0);
-    transform: skew(0.1deg);
-  }
-
-  90% {
-    clip: rect(34px, 9999px, 69px, 0);
-    transform: skew(0.09deg);
-  }
-
-  95% {
-    clip: rect(9px, 9999px, 100px, 0);
-    transform: skew(0.02deg);
-  }
-
-  100% {
-    clip: rect(1px, 9999px, 32px, 0);
-    transform: skew(0.08deg);
-  }
-}
-
-@keyframes glitch-anim2 {
-  0% {
-    clip: rect(96px, 9999px, 71px, 0);
-    transform: skew(0.09deg);
-  }
-
-  5% {
-    clip: rect(86px, 9999px, 12px, 0);
-    transform: skew(0.07deg);
-  }
-
-  10% {
-    clip: rect(41px, 9999px, 26px, 0);
-    transform: skew(0.06deg);
-  }
-
-  15% {
-    clip: rect(94px, 9999px, 80px, 0);
-    transform: skew(0.05deg);
-  }
-
-  20% {
-    clip: rect(89px, 9999px, 6px, 0);
-    transform: skew(0.03deg);
-  }
-
-  25% {
-    clip: rect(100px, 9999px, 22px, 0);
-    transform: skew(0.08deg);
-  }
-
-  30% {
-    clip: rect(61px, 9999px, 33px, 0);
-    transform: skew(0.05deg);
-  }
-
-  35% {
-    clip: rect(56px, 9999px, 97px, 0);
-    transform: skew(0.08deg);
-  }
-
-  40% {
-    clip: rect(80px, 9999px, 16px, 0);
-    transform: skew(0.07deg);
-  }
-
-  45% {
-    clip: rect(8px, 9999px, 39px, 0);
-    transform: skew(0.07deg);
-  }
-
-  50% {
-    clip: rect(74px, 9999px, 81px, 0);
-    transform: skew(0.07deg);
-  }
-
-  55% {
-    clip: rect(70px, 9999px, 19px, 0);
-    transform: skew(0.01deg);
-  }
-
-  60% {
-    clip: rect(83px, 9999px, 84px, 0);
-    transform: skew(0.06deg);
-  }
-
-  65% {
-    clip: rect(80px, 9999px, 45px, 0);
-    transform: skew(0.07deg);
-  }
-
-  70% {
-    clip: rect(2px, 9999px, 38px, 0);
-    transform: skew(0.1deg);
-  }
-
-  75% {
-    clip: rect(49px, 9999px, 38px, 0);
-    transform: skew(0.03deg);
-  }
-
-  80% {
-    clip: rect(82px, 9999px, 81px, 0);
-    transform: skew(0.06deg);
-  }
-
-  85% {
-    clip: rect(67px, 9999px, 72px, 0);
-    transform: skew(0.09deg);
-  }
-
-  90% {
-    clip: rect(54px, 9999px, 48px, 0);
-    transform: skew(0.01deg);
-  }
-
-  95% {
-    clip: rect(56px, 9999px, 5px, 0);
-    transform: skew(0.1deg);
-  }
-
-  100% {
-    clip: rect(15px, 9999px, 26px, 0);
-    transform: skew(0.03deg);
-  }
-}
-
-@keyframes glitch-skew {
-  0% {
-    transform: skew(0deg);
-  }
-
-  10% {
-    transform: skew(0deg);
-  }
-
-  20% {
-    transform: skew(0deg);
-  }
-
-  30% {
-    transform: skew(0deg);
-  }
-
-  40% {
-    transform: skew(0deg);
-  }
-
-  50% {
-    transform: skew(1deg);
-  }
-
-  60% {
-    transform: skew(0deg);
-  }
-
-  70% {
-    transform: skew(0deg);
-  }
-
-  80% {
-    transform: skew(1deg);
-  }
-
-  90% {
-    transform: skew(1deg);
-  }
-
-  100% {
-    transform: skew(1deg);
-  }
-}
-
-.r2d2__bot {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 0.3rem;
-  text-align: center;
-  top: 85%;
-  z-index: 4;
-  font-size: 2rem;
-  width: 6rem;
-  transition: all 1s;
-  animation: jump 1.5s linear infinite alternate 2s;
-}
-
-.r2d2__bot img {
-  height: 10rem;
-}
-
-@keyframes jump {
-  0% {
-    margin-top: -1rem;
-  }
-
-  100% {
-    margin-top: 1rem;
-  }
-}
-
 .home {
   color: white;
   font-family: 'Audiowide', cursive;
@@ -2057,11 +1733,10 @@ body {
 }
 
 .home .nav__category {
-  height: 20%;
-  margin: 2rem;
+  /* margin: 2rem; */
   border-radius: 0.3rem;
   position: relative;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .home .nav__category span,
@@ -2127,6 +1802,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   top: 10%;
+  z-index: 2;
 }
 
 .home__container__img span {
@@ -2333,7 +2009,7 @@ body {
   }
 
   main .home__container #event_4 {
-    margin-top: 55vh;
+    margin-top: 85vh;
   }
 
   .countdown__coming {
@@ -2658,4 +2334,29 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+#output {
+  color: #20dc80;
+  font-size: 1.5rem;
+  line-height: 0.55em;
+  text-rendering: optimizeSpeed;
+  will-change: contents;
+  margin-top: 120px;
+  font-family: monospace;
+  display: flex;
+  font-weight: 2500;
+  justify-content: center;
+  align-items: center;
+  white-space: pre;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+canvas {
+  display: none;
 }
