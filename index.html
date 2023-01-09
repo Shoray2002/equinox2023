@@ -81,31 +81,84 @@
         width: 100%;
         height: 100vh;
     }
+
+    label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #20dc80;
+    }
+
+    label {
+        font-size: 48px;
+        user-select: none;
+    }
+
+    label span {
+        display: flex;
+    }
+
+    label span span {
+        display: block;
+        overflow: hidden;
+    }
+
+    label span span:nth-child(3),
+    label span span:nth-child(5) {
+        transform-origin: center left;
+        transform: rotate(90deg);
+    }
+
+    label span span:nth-child(6) {
+        width: 0px;
+    }
+
+    label span input[type=checkbox] {
+        display: none;
+    }
+
+    label span input[type=checkbox]~span:nth-child(3),
+    label span input[type=checkbox]~span:nth-child(5) {
+        animation: flippy-hands 500ms linear forwards infinite alternate;
+    }
+
+    label span input[type=checkbox]~span:nth-child(7) {
+        animation: flippy-table 1000ms linear forwards infinite;
+    }
+
+    @keyframes flippy-hands {
+        0% {
+            transform: rotate(90deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    @keyframes flippy-table {
+        0% {
+            transform: translateY(0%);
+        }
+
+        50% {
+            transform: translateY(-200%) rotate(270deg);
+        }
+
+        100% {
+            transform: translateY(0%) rotate(540deg);
+        }
+    }
 </style>
 
 <body class="body">
-    <!-- <div id="lines__sphere"></div> -->
-    <!-- <div class="preloader">
-        <div class="body-preload">
-            <span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-            <div class="base">
-              <span></span>
-              <div class="face"></div>
-            </div>
-          </div>
-          <div class="longfazers">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <h1>Redirecting</h1>    
-    </div> -->
+    <div class="preloader">
+        <label><span>
+                <input
+                    type="checkbox" /><span>(</span><span>╯</span><span>°□°）</span><span>╯</span><span>︵</span><span>┳━┳</span></span>
+        </label>
+        <h1>Loading...</h1>
+    </div>
 
     <section id="countdown">
         <div id="checking" class="checking">
