@@ -1694,6 +1694,29 @@ body {
   }
 }
 
+.mobile__nav {
+  display: none;
+  padding: 2rem 4rem;
+}
+
+.mobile__nav-container1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mobile__nav-container2 {
+  margin-top: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile__about {
+  display: none;
+}
+
 .header__img img {
   height: 5rem;
   margin-bottom: 4rem;
@@ -1766,6 +1789,44 @@ body {
   overflow: hidden;
   text-decoration: none;
   color: #ffffff;
+}
+
+.mobile__nav {
+  z-index: 1000000;
+  width: 100%;
+}
+
+.mobile__nav span,
+.mobile__nav a,
+.mobile__nav-category span,
+.mobile__nav-category a {
+  position: relative;
+  font-size: 2.2rem;
+  text-align: center;
+  overflow: hidden;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.mobile__nav-category span::after,
+.mobile__nav-category a::after {
+  content: "";
+  background: rgba(201, 201, 201, 0.25);
+  position: absolute;
+  left: 12px;
+  bottom: -6px;
+  width: 100%;
+  height: 50%;
+  z-index: -1;
+  transition: 0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
+}
+
+.mobile__nav-category span:hover::after,
+.mobile__nav-category a:hover::after {
+  left: 0;
+  bottom: -2px;
+  width: 120%;
+  height: 100%;
 }
 
 .home .nav__category span::after,
@@ -1999,6 +2060,61 @@ body {
     top: 0;
   }
 
+  .nav__category span,
+  .nav__category a,
+  .nav__category {
+    display: none;
+  }
+
+  .home__row.row--1 {
+    position: fixed;
+  }
+
+  .home__row.row--1,
+  .home__row.row--3 {
+    display: none;
+  }
+
+  .mobile__nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100px;
+  }
+
+  .mobile__about {
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60vh;
+  }
+
+  main .home__row {
+    z-index: 0;
+  }
+
+  .mobile__nav-item,
+  .mobile__nav-item a {
+    z-index: 10000;
+    position: relative;
+    font-size: 2rem;
+  }
+
+  .mobile__about-container1 {
+  }
+
+  .mobile__about-container2 {
+    display: flex;
+    flex-direction: row;
+    padding: 0% 4rem;
+    justify-content: space-between;
+  }
+
   main .home__container__img span {
     font-size: 1.4rem;
     top: 35%;
@@ -2013,8 +2129,8 @@ body {
   }
 
   main .home__container #event_3 img {
-    height: 6rem;
-    top: 0;
+    height: 18rem;
+    top: 50vh;
   }
 
   main .home__container #event_4 {
@@ -2484,4 +2600,7 @@ canvas {
 
 .fa-linkedin:hover {
   color: #0a66c2;
+}
+
+@media only screen and (max-width: 900px) {
 }
