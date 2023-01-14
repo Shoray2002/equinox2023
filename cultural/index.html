@@ -1,71 +1,60 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cultural | Equinox</title>
-    <meta
-      name="description"
-      content="An interactive animated landscape built with three.js"
-    />
-    <meta
-      name="keywords"
-      content="three.js, javascript, webgl, animation, landscape, interactive, demo"
-    />
-    <meta name="author" content="Codrops" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Barlow:400,800"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="css/cultural.css" />
-    <script>
-      document.documentElement.className = "js";
-      var supportsCssVars = function () {
-        var e,
-          t = document.createElement("style");
-        return (
-          (t.innerHTML = "root: { --tmp-var: bold; }"),
-          document.head.appendChild(t),
-          (e = !!(
-            window.CSS &&
-            window.CSS.supports &&
-            window.CSS.supports("font-weight", "var(--tmp-var)")
-          )),
-          t.parentNode.removeChild(t),
-          e
-        );
-      };
-      supportsCssVars() ||
-        alert(
-          "Please view this demo in a modern browser that supports CSS Variables."
-        );
-    </script>
-  </head>
-  <body>
-    <main>
-      <div class="frame">
-        <div class="frame__title-wrap">
-          <h1 class="frame__title">Welcome to Cultural</h1>
-        </div>
-        <div class="frame__flex">
-          <a class="frame__github" href="">Events</a>
-          <a class="frame__github" href="">Timeline</a>
-        </div>
-        <a
-          class="frame__previous"
-          href="https://tympanus.net/Development/AmbientCanvasBackgrounds/"
-          >Back home</a
-        >
-        <div class="frame__demos">
-          <a href="#" class="frame__demo">Menu</a>
-          <a href="#" class="frame__demo">Menu</a>
-          <a href="#" class="frame__demo">Menu</a>
-        </div>
-      </div>
-      <div class="content">
-        <canvas class="landscape"></canvas>
-        <script id="custom-vertex" type="x-shader/x-vertex">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Cultural | Equinox</title>
+	<meta name="description" content="An interactive animated landscape built with three.js" />
+	<meta name="keywords" content="three.js, javascript, webgl, animation, landscape, interactive, demo" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link href="https://fonts.googleapis.com/css?family=Barlow:400,800" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="../css/cultural.css" />
+	<script>
+		document.documentElement.className = "js";
+		var supportsCssVars = function () {
+			var e,
+				t = document.createElement("style");
+			return (
+				(t.innerHTML = "root: { --tmp-var: bold; }"),
+				document.head.appendChild(t),
+				(e = !!(
+					window.CSS &&
+					window.CSS.supports &&
+					window.CSS.supports("font-weight", "var(--tmp-var)")
+				)),
+				t.parentNode.removeChild(t),
+				e
+			);
+		};
+		supportsCssVars() ||
+			alert(
+				"Please view this demo in a modern browser that supports CSS Variables."
+			);
+	</script>
+</head>
+
+<body>
+	<main>
+		<div class="frame">
+			<div class="frame__title-wrap">
+				<h1 class="frame__title">Welcome to Cultural</h1>
+			</div>
+			<div class="frame__flex">
+				<a class="frame__github" href="">Events</a>
+				<a class="frame__github" href="">Timeline</a>
+			</div>
+			<a class="frame__previous" href="https://tympanus.net/Development/AmbientCanvasBackgrounds/">Back home</a>
+			<div class="frame__demos">
+				<a href="#" class="frame__demo">Menu</a>
+				<a href="#" class="frame__demo">Menu</a>
+				<a href="#" class="frame__demo">Menu</a>
+			</div>
+		</div>
+		<div class="content">
+			<canvas class="landscape"></canvas>
+			<script id="custom-vertex" type="x-shader/x-vertex">
           vec3 mod289(vec3 x)
           {
           	return x - floor(x * (1.0 / 289.0)) * 289.0;
@@ -281,7 +270,7 @@
 
           }
         </script>
-        <script id="custom-fragment" type="x-shader/x-fragment">
+			<script id="custom-fragment" type="x-shader/x-fragment">
           uniform float time;
           uniform vec3 color;
           uniform sampler2D pallete;
@@ -306,16 +295,17 @@
           	#endif
           }
         </script>
-        <h2 class="content__title">Cultural</h2>
-        <p class="content__subtitle">Equinox 3.0</p>
-      </div>
-      <div class="overlay"></div>
-    </main>
-    <script src="./js/min/three.min.js"></script>
-    <script src="./js/min/sky.min.js"></script>
-    <script src="./js/min/hammer.min.js"></script>
-    <script src="./js/min/charming.min.js"></script>
-    <script src="./js/min/TweenMax.min.js"></script>
-    <script src="js/cultural.js"></script>
-  </body>
+			<h2 class="content__title">Cultural</h2>
+			<p class="content__subtitle">Equinox 3.0</p>
+		</div>
+		<div class="overlay"></div>
+	</main>
+	<script src="../js/min/three.min.js"></script>
+	<script src="../js/min/sky.min.js"></script>
+	<script src="../js/min/hammer.min.js"></script>
+	<script src="../js/min/charming.min.js"></script>
+	<script src="../js/min/tweenmax.min.js"></script>
+	<script src="../js/cultural.js"></script>
+</body>
+
 </html>

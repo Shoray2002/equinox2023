@@ -231,7 +231,7 @@ window.onload = function () {
   loader.crossOrigin = "Anonymous";
 
   // loader.load("img/galaxyTexture.jpg", function (texture) {
-  loader.load("img/texture.jfif", (texture) => {
+  loader.load("../img/texture.jfif", (texture) => {
     document.body.classList.remove("loading");
     window.tunnel = new Tunnel(texture);
   });
