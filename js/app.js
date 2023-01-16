@@ -404,7 +404,8 @@ AsciiMorph(morphElement, { x: 80, y: 28 });
 const morph = () => {
   halter = true;
   window.outputEl.style.display = "none";
-  document.body.style.backgroundImage = "radial-gradient(circle, #000 65vmin, #EC008C 100vmax)";
+  document.body.style.backgroundImage =
+    "radial-gradient(circle, #000 65vmin, #EC008C 100vmax)";
   AsciiMorph.render(asciis[0]);
   var currentIndex = 2;
   const firstTimeout = setTimeout(function () {
@@ -418,7 +419,8 @@ const morph = () => {
 };
 const stopMorph = () => {
   halter = false;
-  document.body.style.backgroundImage = "radial-gradient(circle, #000 65vmin,#3d2b10 100vmax)";
+  document.body.style.backgroundImage =
+    "radial-gradient(circle, #000 65vmin,#3d2b10 100vmax)";
   render();
   window.outputEl.style.display = "flex";
   morphElement.innerHTML = "";
@@ -431,7 +433,8 @@ const stopMorph = () => {
 
 const donutShow = () => {
   halter = true;
-  document.body.style.backgroundImage = "radial-gradient(circle, #000 65vmin, #0EAFB3 100vmax)";
+  document.body.style.backgroundImage =
+    "radial-gradient(circle, #000 65vmin, #0EAFB3 100vmax)";
   window.outputEl.style.display = "none";
   setInterval(() => {
     (z += 0.07), (y += 0.03);
@@ -468,7 +471,8 @@ const donutShow = () => {
 };
 const stopDonut = () => {
   halter = false;
-  document.body.style.backgroundImage = "radial-gradient(circle, #000 65vmin,#3d2b10 100vmax)";
+  document.body.style.backgroundImage =
+    "radial-gradient(circle, #000 65vmin,#3d2b10 100vmax)";
   render();
   window.outputEl.style.display = "flex";
   donutElement.innerHTML = "";
@@ -479,8 +483,8 @@ const stopDonut = () => {
   }
 };
 
-window.WIDTH = 65;
-window.HEIGHT = 65;
+window.WIDTH = 180;
+window.HEIGHT = 180;
 window.scene = new THREE.Scene();
 window.camera = new THREE.PerspectiveCamera(1, WIDTH / HEIGHT, 0.1, 1000);
 window.renderer = new THREE.WebGLRenderer({
@@ -489,7 +493,7 @@ window.renderer = new THREE.WebGLRenderer({
 });
 window.ASCII = "   =!*@@@";
 renderer.setSize(WIDTH, HEIGHT);
-var texture = new THREE.TextureLoader().load("/img/map.jpeg")
+var texture = new THREE.TextureLoader().load("/img/map.jpeg");
 var geometry = new THREE.SphereGeometry(3, 64, 48);
 var material = new THREE.MeshStandardMaterial({
   color: 0xffffff,
@@ -500,18 +504,16 @@ var material = new THREE.MeshStandardMaterial({
 });
 window.globe = new THREE.Mesh(geometry, material);
 window.globe.rotation.z = Math.PI;
-window.globe.rotation.y = 1.5;
+window.globe.rotation.y = 5.5;
 scene.add(globe);
 
 var light = new THREE.PointLight(0xffffff, 3.33, 0);
 light.position.set(150, -150, 1500);
 scene.add(light);
 
-var light2 = new THREE.PointLight(0xffffff, 2, 0);
-light2.position.set(-125, 100, -500);
-scene.add(light2);
-
-camera.position.z = 345;
+camera.position.z = 250;
+camera.position.y = -1;
+console.log(camera);
 document.body.appendChild(renderer.domElement);
 window.gl = window.renderer.context;
 window.pixels = new Uint8Array(
