@@ -4,6 +4,9 @@ let x = 1980,
   y = 0;
 const morphElement = document.querySelector(".morph-section");
 const donutElement = document.querySelector(".donut-section");
+const home__container__img = document.querySelector(
+  ".home__container__img>img"
+);
 let halter = false;
 window.outputEl = document.getElementById("output");
 let AsciiMorph = (function () {
@@ -400,12 +403,15 @@ var asciis = [
     "       //             ",
   ],
 ];
-AsciiMorph(morphElement, { x: 80, y: 28 });
+AsciiMorph(morphElement, { x: 100, y: 28 });
 const morph = () => {
   halter = true;
   window.outputEl.style.display = "none";
-  document.body.style.backgroundImage =
-    "radial-gradient(circle, #000 65vmin, #EC008C 100vmax)";
+  // document.body.style.backgroundImage =
+  //   "radial-gradient(circle, #000 65vmin, #EC008C 100vmax)";
+  // translate home__container__img up and scale it down
+  home__container__img.style.top = "10%";
+  home__container__img.style.transform = "translate(-50%, -50%) scale(0.5)";
   AsciiMorph.render(asciis[0]);
   var currentIndex = 2;
   const firstTimeout = setTimeout(function () {
@@ -419,8 +425,11 @@ const morph = () => {
 };
 const stopMorph = () => {
   halter = false;
-  document.body.style.backgroundImage =
-    "radial-gradient(circle, #000 65vmin,#3d2b10 100vmax)";
+  // document.body.style.backgroundImage =
+  //   "radial-gradient(circle, #000 65vmin,#3d2b10 100vmax)";
+  home__container__img.style.top = "100%";
+  home__container__img.style.transform = "translate(-50%, -50%) scale(1)";
+
   render();
   window.outputEl.style.display = "flex";
   morphElement.innerHTML = "";
@@ -433,8 +442,10 @@ const stopMorph = () => {
 
 const donutShow = () => {
   halter = true;
-  document.body.style.backgroundImage =
-    "radial-gradient(circle, #000 65vmin, #0EAFB3 100vmax)";
+  // document.body.style.backgroundImage =
+  //   "radial-gradient(circle, #000 65vmin, #0EAFB3 100vmax)";
+  home__container__img.style.top = "10%";
+  home__container__img.style.transform = "translate(-50%, -50%) scale(0.5)";
   window.outputEl.style.display = "none";
   setInterval(() => {
     (z += 0.07), (y += 0.03);
@@ -471,8 +482,10 @@ const donutShow = () => {
 };
 const stopDonut = () => {
   halter = false;
-  document.body.style.backgroundImage =
-    "radial-gradient(circle, #000 65vmin,#3d2b10 100vmax)";
+  // document.body.style.backgroundImage =
+  //   "radial-gradient(circle, #000 65vmin,#3d2b10 100vmax)";
+  home__container__img.style.top = "100%";
+  home__container__img.style.transform = "translate(-50%, -50%) scale(1)";
   render();
   window.outputEl.style.display = "flex";
   donutElement.innerHTML = "";
