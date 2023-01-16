@@ -179,7 +179,10 @@ event_4.addEventListener("click", (e) => {
 event_5.addEventListener("click", (e) => {
   fn_event_1();
   e1.play();
-  console.log("as");
+  console.log("about");
+});
+window.addEventListener("load", () => {
+  event_5.click();
 });
 // event2_4.addEventListener("click", (e) => {
 //   fn_event_1();
@@ -200,13 +203,11 @@ event_5.addEventListener("click", (e) => {
 // });
 
 aboutHome.addEventListener("click", () => {
-  console.log("as");
   e1.reversed() ? e1.play() : e1.reverse();
 });
 
 sponsorsHome.addEventListener("click", () => {
   console.log("clicked back spon");
-
   e2.reversed() ? e2.play() : e2.reverse();
 });
 

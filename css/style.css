@@ -521,7 +521,7 @@ body {
 .heading__primary {
   font-family: "Audiowide";
   font-size: 10rem;
-  color: #f3f3f3;
+  color: #77777757;
 }
 
 .heading__tertiary {
@@ -540,7 +540,7 @@ body {
 .background__line {
   width: 10vw;
   height: 100vh;
-  border-right: 0.7px solid #e0e0e0;
+  border-right: 0.7px dashed #e0e0e0;
   height: 0vh;
   width: 0vw;
 }
@@ -1892,13 +1892,14 @@ body {
 
 .about--section {
   position: absolute;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   height: 100vh;
   width: 100vw;
   z-index: 1;
   height: 10vh;
   width: 10vw;
   transform: scale(0);
+  color: #fbb040 !important;
 }
 
 .about__heading--bg {
@@ -1958,6 +1959,7 @@ body {
   line-height: 3rem;
   margin-top: 1rem;
   line-height: 3rem;
+  color: whitesmoke;
 }
 
 .about__images {
@@ -1970,6 +1972,7 @@ body {
   transition: all 0.5s;
   position: absolute;
   background-size: cover;
+  border: 0.5px dashed #ec008c8f;
 }
 
 .about__image--1 {
