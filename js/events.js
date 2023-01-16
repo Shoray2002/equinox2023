@@ -1,11 +1,9 @@
 ////////////////////////lOADER////////////////////////
-
 const timeCount = 3000;
 
 const counting = () => {
   for (let i = 1; i <= timeCount / 1000; i++) {
-    setTimeout(() => {
-    }, i * 1000);
+    setTimeout(() => {}, i * 1000);
   }
 };
 
@@ -18,12 +16,11 @@ setTimeout(() => {
 
 // ///////////////////////EVENTS FUNC/////////////
 
-// <<<<<<< HEAD
-const event_1 = document.querySelector("#event_1>a"); //conclave Workshop
-const event_2 = document.querySelector("#event_2>span"); //sponsors
+// const event_1 = document.querySelector("#event_1>a"); //conclave Workshop
+// const event_2 = document.querySelector("#event_2>span"); //sponsors
 const event_3 = document.querySelector("#event_3>span"); //home heading
-const event_4 = document.querySelector("#event_4>span"); //about
-const event_5 = document.querySelector("#event_5>a"); //events
+const event_4 = document.getElementById("event_4"); //about
+const event_5 = document.getElementById("event_5"); //events
 const event_6 = document.querySelector("#event_6>span"); //team
 
 const event2_1 = document.querySelector("#event2_1>span"); //conclave Workshop
@@ -158,44 +155,49 @@ const fn_event_4 = () => {
   // .to(".sponsors__footer",{duration:0.0,opacity:1},"-=1")
 };
 
-event_1.addEventListener("click", (e) => {
-  fn_event_4();
-  e4.play();
-});
+// event_1.addEventListener("click", (e) => {
+//   fn_event_4();
+//   e4.play();
+// });
 event2_1.addEventListener("click", (e) => {
   fn_event_4();
   e4.play();
 });
-event_2.addEventListener("click", (e) => {
-  fn_event_2();
-  e2.play();
-});
-event2_2.addEventListener("click", (e) => {
-  fn_event_2();
-  e2.play();
-});
+// event_2.addEventListener("click", (e) => {
+//   fn_event_2();
+//   e2.play();
+// });
+// event2_2.addEventListener("click", (e) => {
+//   fn_event_2();
+//   e2.play();
+// });
 event_4.addEventListener("click", (e) => {
+  fn_event_4();
+  e1.play();
+  console.log("as");
+});
+event_5.addEventListener("click", (e) => {
   fn_event_1();
   e1.play();
   console.log("as");
 });
-event2_4.addEventListener("click", (e) => {
-  fn_event_1();
-  e1.play();
-  console.log("as");
-});
+// event2_4.addEventListener("click", (e) => {
+//   fn_event_1();
+//   e1.play();
+//   console.log("as");
+// });
 
-event_6.addEventListener("click", (e) => {
-  console.log("clicked");
+// event_6.addEventListener("click", (e) => {
+//   console.log("clicked");
 
-  // e1.play();
+//   // e1.play();
 
-  fn_event_3();
+//   fn_event_3();
 
-  e3.play();
+//   e3.play();
 
-  console.log("as");
-});
+//   console.log("as");
+// });
 
 aboutHome.addEventListener("click", () => {
   console.log("as");
@@ -229,25 +231,3 @@ const callConclave = () => {
 };
 
 callConclave();
-
-// TEST
-// document.querySelector("html").addEventListener("click",(e) => {
-//     // console.log(e.view)
-//     console.log(e.view.outerHeight , e.view.outerWidth)
-
-//     console.log(e.view.innerHeight , e.view.innerWidth)
-
-// yheight = -e.view.innerHeight + 0.2 * e.view.innerHeight;
-// xwidth= -e.view.innerWidth + 0.11 * e.view.innerWidth;
-// })
-
-// // TEST
-// // document.querySelector("html").addEventListener("click",(e) => {
-// //     // console.log(e.view)
-// //     console.log(e.view.outerHeight , e.view.outerWidth)
-
-// //     console.log(e.view.innerHeight , e.view.innerWidth)
-
-// // yheight = -e.view.innerHeight + 0.2 * e.view.innerHeight;
-// // xwidth= -e.view.innerWidth + 0.11 * e.view.innerWidth;
-// // })
