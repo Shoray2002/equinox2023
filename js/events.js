@@ -191,9 +191,9 @@ event_6.addEventListener("click", (e) => {
   fn_event_3();
   e3.play();
 });
-window.addEventListener("load", () => {
-  event_6.click();
-});
+// window.addEventListener("load", () => {
+//   event_6.click();
+// });
 
 aboutHome.addEventListener("click", () => {
   e1.reversed() ? e1.play() : e1.reverse();
