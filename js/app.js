@@ -4,11 +4,15 @@ let x = 1980,
   y = 0;
 const morphElement = document.querySelector(".morph-section");
 const donutElement = document.querySelector(".donut-section");
+window.outputEl = document.getElementById("output");
+outputEl.style.transform = `scale(${window.innerWidth / x})`;
+window.addEventListener("resize", () => {
+  outputEl.style.transform = `scale(${window.innerWidth / x})`;
+});
 const home__container__img = document.querySelector(
   ".home__container__img>img"
 );
 let halter = false;
-window.outputEl = document.getElementById("output");
 let AsciiMorph = (function () {
   "use strict";
   var element = null;
@@ -496,13 +500,12 @@ const stopDonut = () => {
   }
 };
 
-window.WIDTH = 180;
-window.HEIGHT = 180;
+window.WIDTH = 200;
+window.HEIGHT = 200;
 window.scene = new THREE.Scene();
 window.camera = new THREE.PerspectiveCamera(1, WIDTH / HEIGHT, 0.1, 1000);
 window.renderer = new THREE.WebGLRenderer({
   alpha: true,
-  antialias: true,
 });
 window.ASCII = "   =!*@@@";
 renderer.setSize(WIDTH, HEIGHT);
@@ -582,3 +585,31 @@ function asciify(val, index) {
   }
   return br + window.ASCII[val];
 }
+
+let interval;
+
+const element = document.querySelector(".scramble");
+const originalText = element.innerText;
+
+const randomInt = (max) => Math.floor(Math.random() * max);
+const randomFromArray = (array) => array[randomInt(array.length)];
+
+const scrambleText = (text) => {
+  const chars = "*?><[]&@#)(.%$-_:/;?!".split("");
+  return text
+    .split("")
+    .map((x) => (randomInt(3) > 1 ? randomFromArray(chars) : x))
+    .join("");
+};
+
+element.addEventListener("mouseover", () => {
+  interval = setInterval(
+    () => (element.innerText = scrambleText(originalText)),
+    100
+  );
+});
+
+element.addEventListener("mouseout", () => {
+  clearInterval(interval);
+  element.innerText = originalText;
+});

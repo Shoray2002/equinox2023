@@ -688,22 +688,21 @@ body {
 .footer__container {
   z-index: 100;
   position: absolute;
-  position: absolute;
-  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   top: 97%;
   width: 30%;
   text-decoration: none;
   padding: 1rem 0 1rem 0;
-  background-color: #ffffff24;
+  background-color: #36363624;
   clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+  border-top: #ffffff70 1px dashed;
 }
 
 .footer__container ul {
   display: flex;
   justify-content: space-evenly;
-  font-size: 3rem;
+  font-size: 2rem;
   list-style-type: none;
 }
 
@@ -1762,10 +1761,12 @@ body {
 }
 
 .home .nav__category {
-  margin: 2rem;
-  border-radius: 0.3rem;
+  margin: 1rem;
   position: relative;
   padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home .nav__category span,
@@ -1780,13 +1781,9 @@ body {
   line-height: 3rem;
   font-size: 2.2rem;
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   overflow: hidden;
   text-decoration: none;
-  color: #ffffff;
+  color: #d6d6d6;
 }
 
 .mobile__nav {
@@ -1830,14 +1827,14 @@ body {
 .home .nav__category span::after,
 .home .nav__category a::after {
   content: "";
-  background: rgba(201, 201, 201, 0.25);
+  border-top: 2px dashed rgba(253, 253, 253, 0.25);
   position: absolute;
-  left: 12px;
-  bottom: -6px;
+  left: 0px;
+  bottom: -5px;
   width: 100%;
-  height: 50%;
+  height: 25%;
   z-index: -1;
-  transition: 0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
+  transition: 0.35s cubic-bezier(0.42, -0.38, 0, 1.63);
 }
 
 .home .nav__category span:hover:after,
@@ -1846,6 +1843,8 @@ body {
   bottom: -2px;
   width: 120%;
   height: 100%;
+  background: rgba(230, 230, 230, 0.25);
+  border: none;
 }
 
 .home__container {
@@ -2468,7 +2467,7 @@ body {
 }
 
 #output {
-  color: #c48a34;
+  color: #c48a3477;
   position: absolute;
   top: 0;
   left: 0;
@@ -2625,3 +2624,11 @@ canvas {
 }
 
 @media only screen and (max-width: 900px) {}
+
+span.scramble {
+  width: 240px;
+}
+
+#event_4>span {
+  scale: 1.5;
+}
