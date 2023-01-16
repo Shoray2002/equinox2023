@@ -526,7 +526,6 @@ scene.add(light);
 
 camera.position.z = 250;
 camera.position.y = -1;
-console.log(camera);
 document.body.appendChild(renderer.domElement);
 window.gl = window.renderer.context;
 window.pixels = new Uint8Array(
