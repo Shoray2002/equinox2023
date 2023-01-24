@@ -26,25 +26,21 @@ const REDIRECT_URI = "http://localhost:5501/ticket.html";
 const UUID = createUUID();
 
 const fetchUserData = async (code) => {
-  fetch(`https://github.com/login/oauth/access_token`, {
-    method: "POST",
-    mode: "cors",
-    headers: {
-      Accept: "application/json",
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "OPTIONS, POST, GET",
-      "Access-Control-Allow-Credentials": "true",
-      "Content-Type": "application/vnd.github.cloak-preview",
-      Authorization: "",
-      Origin: "http://localhost:5501",
-    },
-    body: {
-      client_id: CLIENT_ID,
-      client_secret: CLIENT_SECRET,
-      code: code,
-      redirect_uri: REDIRECT_URI,
-    },
-  })
+  fetch(
+    `https://github.com/login/oauth/access_token&client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}&code=${code}&redirect_uri=${REDIRECT_URI}`,
+    {
+      method: "POST",
+      headers: {
+        Accept: "application/vnd.github.cloak-preview",
+      },
+      body: {
+        client_id: CLIENT_ID,
+        client_secret: CLIENT_SECRET,
+        code: code,
+        redirect_uri: REDIRECT_URI,
+      },
+    }
+  )
     .then((res) => console.log(res))
     .then((res) => res.json())
     .then((res) => console.log(res))
