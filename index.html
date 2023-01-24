@@ -290,7 +290,11 @@
     padding-top: 10%;
   }
 }
- 
+ .getticket:hover{
+      background-color: white;
+      opacity: 0.6;
+      display: none;
+ }
   </style>
 
   <body class="body">
@@ -335,10 +339,10 @@
           <div class="nav-header">
             <div class="nav-title">
             <a href="/">
-  
               <img src="/img/equinox-logo.png"   width="70px"  alt="">
             </a>
             </div>
+            
           </div>
           <div class="nav-btn">
             <label for="nav-check">
@@ -358,6 +362,13 @@
 
           <div class="logo_mobile">
             <img src="./img/equinox-logo.png" height="200px"  alt="">
+         
+            <div style="color: white; font-size: 4rem; margin-top: 10rem;"  id="event_4"
+            >
+            <span title="Get Event Ticket" class="scramble getticket" onclick="window.location.href = '/ticket.html'"
+            >Get Tickets &#127903;</span>
+            </div>
+          </div>
           </div>
       <section id="home__container" class="home">
         
@@ -423,7 +434,7 @@
             class="nav__category"
             style="height: 0%; margin-top: 10rem"
           >
-            <span title="Get Event Ticket" class="scramble"
+            <span title="Get Event Ticket" class="scramble"  onclick="window.location.href = '/ticket.html'"
               >Get Tickets &#127903;</span
             >
           </div>

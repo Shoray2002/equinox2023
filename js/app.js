@@ -1,3 +1,22 @@
+function getParameterByName(name, url = window.location.href) {
+  name = name.replace(/[\[\]]/g, "\\$&");
+  var regex = new RegExp("[?#&]" + name + "(=([^&#]*)|&|#|$)"),
+    results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return "";
+  return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+const access_token = getParameterByName("access_token");
+const provider_token = getParameterByName("provider_token");
+const refresh_token = getParameterByName("refresh_token");
+
+if (access_token) {
+  window.location.href = `/ticket.html?access_token=${access_token}&provider_token=${provider_token}&refresh_token=${refresh_token}`;
+}
+
+console.log(access_token, provider_token, refresh_token);
+
 let myTimeout = null;
 let x = 1980,
   z = 150,
