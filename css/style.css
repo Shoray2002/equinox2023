@@ -655,11 +655,9 @@ body {
 }
 
 .preloader {
-  background-image: radial-gradient(
-    circle,
-    #000 25vmin,
-    rgb(0, 24, 48) 100vmax
-  );
+  background-image: radial-gradient(circle,
+      #000 25vmin,
+      rgb(0, 24, 48) 100vmax);
   overflow: hidden;
   z-index: 1000;
   position: fixed;
@@ -1265,7 +1263,7 @@ body {
   transform: scale(1.05);
 }
 
-.team__card--links > * {
+.team__card--links>* {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0.4rem;
@@ -1570,21 +1568,21 @@ body {
   background-position: center;
 }
 
-.header > span {
+.header>span {
   font-family: Mulish;
   text-transform: capitalize;
   font-size: 1.5rem;
   margin-top: 2rem;
 }
 
-.header > h2 {
+.header>h2 {
   font-family: Mulish;
   font-size: 3rem;
   margin: 0;
   color: #4f46a5;
 }
 
-.header > h4 {
+.header>h4 {
   font-family: Mulish;
   margin-top: 10px;
   font-weight: normal;
@@ -1602,7 +1600,7 @@ body {
   font-size: 2.5rem;
 }
 
-.form > p {
+.form>p {
   text-align: right;
 }
 
@@ -1622,7 +1620,7 @@ body {
   border-color: #0f7ef1;
 }
 
-.form > button {
+.form>button {
   cursor: pointer;
   padding: 12px 10px;
   border: 0;
@@ -2021,15 +2019,15 @@ body {
     width: 33vw;
   }
 
-  main .home__row.row--1 > * {
+  main .home__row.row--1>* {
     display: none;
   }
 
-  main .home__row.row--2 > div:last-child {
+  main .home__row.row--2>div:last-child {
     display: none;
   }
 
-  main .home__row.row--3 > * {
+  main .home__row.row--3>* {
     display: block !important;
   }
 
@@ -2107,8 +2105,7 @@ body {
     font-size: 2rem;
   }
 
-  .mobile__about-container1 {
-  }
+  .mobile__about-container1 {}
 
   .mobile__about-container2 {
     display: flex;
@@ -2626,13 +2623,12 @@ canvas {
   color: #0a66c2;
 }
 
-@media only screen and (max-width: 900px) {
-}
+@media only screen and (max-width: 900px) {}
 
 span.scramble {
   width: 240px;
 }
 
-#event_4 > span {
+#event_4>span {
   scale: 1.5;
 }
