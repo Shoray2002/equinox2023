@@ -2467,13 +2467,13 @@ body {
 }
 
 #output {
-  color: #c48a3477;
+  color: #ffb444d5;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  font-size: 1.4rem;
+  font-size: 2rem;
   line-height: 0.55em;
   text-rendering: optimizeSpeed;
   will-change: contents;
