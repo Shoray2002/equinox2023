@@ -158,8 +158,13 @@ const fn_event_4 = () => {
 //   e4.play();
 // });
 event2_1.addEventListener("click", (e) => {
-  fn_event_4();
-  e4.play();
+  // fn_event_4();
+  // e4.play();
+  // open link in new tab
+  window.open(
+    "https://drive.google.com/file/d/1vUj5IbCgJf2VKRnK_-On1XTIo2W2MxMR/view?usp=share_link",
+    "_blank"
+  );
 });
 event_2.addEventListener("click", (e) => {
   fn_event_2();
@@ -170,9 +175,13 @@ event_2.addEventListener("click", (e) => {
 //   e2.play();
 // });
 event_4.addEventListener("click", (e) => {
-  fn_event_4();
-  e1.play();
-  console.log("as");
+  // fn_event_4();
+  // e1.play();
+  // console.log("as");
+  window.open(
+    "https://drive.google.com/file/d/1vUj5IbCgJf2VKRnK_-On1XTIo2W2MxMR/view?usp=share_link",
+    "_blank"
+  );
 });
 event_5.addEventListener("click", (e) => {
   fn_event_1();
